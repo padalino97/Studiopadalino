@@ -1,17 +1,15 @@
+/*
+  Design: Authoritative Consulting
+  Theme: Professional, Clean, Trustworthy
+  Colors: Blue (#2563eb), Gray (#374151), White, Light Gray
+*/
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
-/* 
-  Design: Industrial Brutalism Meets Safety
-  Palette: Giallo Safety (#FFD100), Nero Carbone (#1A1A1A), Bianco, Arancione Warning
-  Typography: Bebas Neue (display), Work Sans (body)
-*/
-
 @theme inline {
-  --font-display: "Bebas Neue", sans-serif;
-  --font-body: "Work Sans", sans-serif;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -48,51 +46,58 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-  /* Custom Safety Colors */
-  --color-safety-yellow: oklch(0.89 0.18 95);
-  --color-safety-black: oklch(0.15 0.01 0);
-  --color-safety-orange: oklch(0.7 0.2 45);
-  --color-safety-white: oklch(0.99 0 0);
+  
+  /* Custom font families */
+  --font-display: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
 }
 
 :root {
-  --radius: 0.25rem;
-  /* Industrial Brutalism - minimal radius */
-  --background: oklch(0.99 0 0);
-  --foreground: oklch(0.15 0.01 0);
-  --card: oklch(0.98 0 0);
-  --card-foreground: oklch(0.15 0.01 0);
-  --popover: oklch(0.99 0 0);
-  --popover-foreground: oklch(0.15 0.01 0);
-  /* Primary: Safety Yellow */
-  --primary: oklch(0.89 0.18 95);
-  --primary-foreground: oklch(0.15 0.01 0);
-  /* Secondary: Dark Charcoal */
-  --secondary: oklch(0.2 0.01 0);
-  --secondary-foreground: oklch(0.99 0 0);
-  --muted: oklch(0.95 0.005 0);
-  --muted-foreground: oklch(0.45 0.01 0);
-  /* Accent: Safety Orange */
-  --accent: oklch(0.7 0.2 45);
-  --accent-foreground: oklch(0.15 0.01 0);
-  --destructive: oklch(0.6 0.25 25);
-  --destructive-foreground: oklch(0.99 0 0);
-  --border: oklch(0.88 0.005 0);
-  --input: oklch(0.92 0.005 0);
-  --ring: oklch(0.89 0.18 95);
-  --chart-1: oklch(0.89 0.18 95);
-  --chart-2: oklch(0.7 0.2 45);
-  --chart-3: oklch(0.2 0.01 0);
-  --chart-4: oklch(0.5 0.01 0);
-  --chart-5: oklch(0.75 0.15 95);
-  --sidebar: oklch(0.15 0.01 0);
-  --sidebar-foreground: oklch(0.95 0 0);
-  --sidebar-primary: oklch(0.89 0.18 95);
-  --sidebar-primary-foreground: oklch(0.15 0.01 0);
-  --sidebar-accent: oklch(0.25 0.01 0);
-  --sidebar-accent-foreground: oklch(0.95 0 0);
-  --sidebar-border: oklch(0.3 0.01 0);
-  --sidebar-ring: oklch(0.89 0.18 95);
+  /* Professional Blue Theme */
+  --primary: oklch(0.546 0.245 262.881); /* #2563eb */
+  --primary-foreground: oklch(0.985 0 0); /* white */
+  
+  --secondary: oklch(0.373 0.034 257.287); /* #374151 */
+  --secondary-foreground: oklch(0.985 0 0); /* white */
+  
+  --accent: oklch(0.627 0.194 149.214); /* #059669 - green for WhatsApp */
+  --accent-foreground: oklch(0.985 0 0);
+  
+  --background: oklch(1 0 0); /* white */
+  --foreground: oklch(0.145 0.014 285.823); /* #111827 */
+  
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0.014 285.823);
+  
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0.014 285.823);
+  
+  --muted: oklch(0.968 0.003 264.542); /* #f9fafb */
+  --muted-foreground: oklch(0.446 0.03 256.802); /* #6b7280 */
+  
+  --border: oklch(0.928 0.006 264.531); /* #e5e7eb */
+  --input: oklch(0.928 0.006 264.531);
+  --ring: oklch(0.546 0.245 262.881);
+  
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  
+  --chart-1: oklch(0.546 0.245 262.881);
+  --chart-2: oklch(0.627 0.194 149.214);
+  --chart-3: oklch(0.373 0.034 257.287);
+  --chart-4: oklch(0.705 0.015 286.067);
+  --chart-5: oklch(0.446 0.03 256.802);
+  
+  --sidebar: oklch(0.968 0.003 264.542);
+  --sidebar-foreground: oklch(0.145 0.014 285.823);
+  --sidebar-primary: oklch(0.546 0.245 262.881);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.928 0.006 264.531);
+  --sidebar-accent-foreground: oklch(0.145 0.014 285.823);
+  --sidebar-border: oklch(0.928 0.006 264.531);
+  --sidebar-ring: oklch(0.546 0.245 262.881);
+  
+  --radius: 0.5rem;
 }
 
 @layer base {
@@ -100,12 +105,14 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body;
     font-family: var(--font-body);
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
-    letter-spacing: 0.02em;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--foreground);
   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
@@ -149,28 +156,7 @@
     }
   }
 
-  /* Safety Stripes Pattern */
-  .safety-stripes {
-    background: repeating-linear-gradient(
-      -45deg,
-      oklch(0.89 0.18 95),
-      oklch(0.89 0.18 95) 10px,
-      oklch(0.15 0.01 0) 10px,
-      oklch(0.15 0.01 0) 20px
-    );
-  }
-
-  .safety-stripes-thin {
-    background: repeating-linear-gradient(
-      -45deg,
-      oklch(0.89 0.18 95),
-      oklch(0.89 0.18 95) 4px,
-      oklch(0.15 0.01 0) 4px,
-      oklch(0.15 0.01 0) 8px
-    );
-  }
-
-  /* Font utilities */
+  /* Custom utility classes */
   .font-display {
     font-family: var(--font-display);
   }
@@ -178,24 +164,71 @@
   .font-body {
     font-family: var(--font-body);
   }
+
+  /* Info box with left border */
+  .info-box {
+    @apply bg-blue-50 border-l-4 border-primary p-4 rounded-r-lg;
+  }
+
+  /* Service card hover effect */
+  .service-card {
+    @apply bg-white border border-border rounded-lg p-6 transition-all duration-200;
+  }
+
+  .service-card:hover {
+    @apply shadow-lg border-primary/20;
+    transform: translateY(-4px);
+  }
+
+  /* Sidebar sticky */
+  .sidebar-sticky {
+    @apply sticky top-24;
+  }
+
+  /* Breadcrumb styling */
+  .breadcrumb {
+    @apply flex items-center gap-2 text-sm text-muted-foreground;
+  }
+
+  .breadcrumb a {
+    @apply hover:text-primary transition-colors;
+  }
+
+  /* Section padding */
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  /* WhatsApp button */
+  .whatsapp-btn {
+    @apply bg-[#25D366] hover:bg-[#20BD5A] text-white font-semibold;
+  }
+
+  /* Badge for regulations */
+  .badge-regulation {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-primary;
+  }
 }
 
-@layer utilities {
-  /* Diagonal clip for sections */
-  .clip-diagonal-top {
-    clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
-  }
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
 
-  .clip-diagonal-bottom {
-    clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
-  }
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
 
-  /* Text shadow for readability on images */
-  .text-shadow {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
 
-  .text-shadow-lg {
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
-  }
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
 }
