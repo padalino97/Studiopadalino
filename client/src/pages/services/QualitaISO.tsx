@@ -72,7 +72,9 @@ export default function QualitaISO() {
     <ServicePageLayout
       title="Sistemi di Qualità ISO"
       subtitle="Implementazione e certificazione ISO 9001, ISO 14001, ISO 45001, ISO 37001. Audit interni, formazione e assistenza per il mantenimento del sistema."
-      badge="Certificazioni"
+      badge="Certificazioni ISO"
+      heroImage="/images/quality-certification.jpg"
+      icon={<Award className="w-4 h-4" />}
       intro={
         <p>
           I sistemi di gestione certificati ISO rappresentano uno strumento strategico per 

@@ -5,7 +5,7 @@
 */
 
 import ServicePageLayout from "@/components/ServicePageLayout";
-import { CheckCircle, GraduationCap, Users, Clock, Award, BookOpen } from "lucide-react";
+import { CheckCircle, GraduationCap, Users, Clock, Award, BookOpen, School } from "lucide-react";
 
 const faqs = [
   {
@@ -95,6 +95,8 @@ export default function Formazione() {
       title="Formazione Sicurezza sul Lavoro"
       subtitle="Corsi obbligatori per lavoratori, preposti, dirigenti, RSPP, RLS, antincendio e primo soccorso. Attestati validi e riconosciuti su tutto il territorio nazionale."
       badge="Corsi Certificati"
+      heroImage="/images/training-room.jpg"
+      icon={<School className="w-4 h-4" />}
       intro={
         <p>
           La formazione è uno degli obblighi fondamentali previsti dal D.Lgs 81/08 per garantire 

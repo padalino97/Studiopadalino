@@ -42,6 +42,8 @@ export default function AutorizzazioniSanitarie() {
       title="Autorizzazioni Sanitarie"
       subtitle="Consulenza per l'apertura, l'adeguamento e l'accreditamento di strutture sanitarie e socio-sanitarie. Assistenza completa per il rispetto dei requisiti normativi."
       badge="Strutture Mediche"
+      heroImage="/images/hero-consulting.jpg"
+      icon={<Building2 className="w-4 h-4" />}
       intro={
         <p>
           L'apertura di una struttura sanitaria richiede il rispetto di numerosi requisiti 

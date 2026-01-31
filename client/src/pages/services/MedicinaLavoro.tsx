@@ -5,7 +5,7 @@
 */
 
 import ServicePageLayout from "@/components/ServicePageLayout";
-import { CheckCircle, Stethoscope, ClipboardList, Calendar, UserCheck } from "lucide-react";
+import { CheckCircle, Stethoscope, ClipboardList, Calendar, UserCheck, Heart } from "lucide-react";
 
 const faqs = [
   {
@@ -42,6 +42,8 @@ export default function MedicinaLavoro() {
       title="Medicina del Lavoro"
       subtitle="Sorveglianza sanitaria, nomina medico competente, visite mediche preventive e periodiche. Tutela della salute dei lavoratori secondo il D.Lgs 81/08."
       badge="Sorveglianza Sanitaria"
+      heroImage="/images/medical-checkup.jpg"
+      icon={<Heart className="w-4 h-4" />}
       intro={
         <p>
           La medicina del lavoro è la branca della medicina che si occupa della prevenzione, 

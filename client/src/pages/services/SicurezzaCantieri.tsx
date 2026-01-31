@@ -42,6 +42,8 @@ export default function SicurezzaCantieri() {
       title="Sicurezza Cantieri"
       subtitle="Coordinamento CSP e CSE, redazione PSC, POS, PIMUS, fascicolo dell'opera. Sopralluoghi e verifiche periodiche in cantiere secondo il Titolo IV del D.Lgs 81/08."
       badge="Coordinamento"
+      heroImage="/images/workplace-safety.jpg"
+      icon={<HardHat className="w-4 h-4" />}
       intro={
         <p>
           I cantieri edili rappresentano uno degli ambienti di lavoro a più alto rischio. 

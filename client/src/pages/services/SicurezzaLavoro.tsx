@@ -5,7 +5,7 @@
 */
 
 import ServicePageLayout from "@/components/ServicePageLayout";
-import { CheckCircle, AlertTriangle, FileText, Users, Building } from "lucide-react";
+import { CheckCircle, AlertTriangle, FileText, Users, Building, Shield } from "lucide-react";
 
 const faqs = [
   {
@@ -42,6 +42,8 @@ export default function SicurezzaLavoro() {
       title="Sicurezza sul Lavoro"
       subtitle="Consulenza completa per la sicurezza nei luoghi di lavoro secondo il D.Lgs 81/08. DVR, RSPP esterno, valutazione rischi e assistenza durante le ispezioni."
       badge="D.Lgs 81/08"
+      heroImage="/images/workplace-safety.jpg"
+      icon={<Shield className="w-4 h-4" />}
       intro={
         <p>
           La sicurezza sul lavoro non è solo un obbligo di legge, ma un investimento strategico 

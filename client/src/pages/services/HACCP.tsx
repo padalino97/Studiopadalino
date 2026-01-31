@@ -42,6 +42,8 @@ export default function HACCP() {
       title="HACCP - Sicurezza Alimentare"
       subtitle="Manuali di autocontrollo, formazione alimentaristi, analisi di laboratorio e assistenza durante i controlli ASP. Conformità al Reg. CE 852/2004."
       badge="Sicurezza Alimentare"
+      heroImage="/images/hero-consulting.jpg"
+      icon={<UtensilsCrossed className="w-4 h-4" />}
       intro={
         <p>
           La sicurezza alimentare è un obbligo di legge per tutte le aziende del settore food. 
