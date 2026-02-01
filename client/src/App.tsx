@@ -16,6 +16,9 @@ import HACCP from "./pages/services/HACCP";
 import PrivacyGDPR from "./pages/services/PrivacyGDPR";
 import SicurezzaCantieri from "./pages/services/SicurezzaCantieri";
 
+// Course Pages
+import RSPPCourse from "./pages/services/courses/RSPP";
+
 function Router() {
   return (
     <Switch>
@@ -30,6 +33,9 @@ function Router() {
       <Route path="/servizi/haccp" component={HACCP} />
       <Route path="/servizi/privacy-gdpr" component={PrivacyGDPR} />
       <Route path="/servizi/sicurezza-cantieri" component={SicurezzaCantieri} />
+      
+      {/* Course Pages */}
+      <Route path="/servizi/formazione/rspp" component={RSPPCourse} />
       
       <Route path="/404" component={NotFound} />
       {/* Final fallback route */}

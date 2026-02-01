@@ -1,0 +1,118 @@
+{
+  "formazione": [
+    {
+      "id": "rspp",
+      "title": "Corso RSPP (Responsabile Servizio Prevenzione Protezione)",
+      "subtitle": "Formazione completa per responsabili della sicurezza aziendale",
+      "image": "/images/training-room.jpg",
+      "icon": "Shield",
+      "duration": "48 ore",
+      "level": "Avanzato",
+      "description": "Cos'è il corso\nIl corso RSPP è una formazione obbligatoria per chi ricopre il ruolo di Responsabile del Servizio di Prevenzione e Protezione. Fornisce competenze approfondite sulla gestione della sicurezza, valutazione dei rischi e conformità normativa.\n\nA chi è rivolto\nResponsabili della sicurezza, manager, coordinatori di sicurezza, imprenditori che vogliono acquisire competenze specifiche in materia di prevenzione e protezione.\n\nCome si svolge\nFormazione in aula con lezioni teoriche, case study pratici, esercitazioni su DVR e valutazione dei rischi. Utilizzo di materiali didattici aggiornati e riferimenti normativi vigenti.\n\nDurata\n48 ore suddivise in moduli tematici (Modulo A: 28 ore, Modulo B: 48 ore, Modulo C: 24 ore a seconda della specializzazione)."
+    },
+    {
+      "id": "lavoratori",
+      "title": "Corso Sicurezza Lavoratori",
+      "subtitle": "Formazione obbligatoria per tutti i dipendenti",
+      "image": "/images/workplace-safety.jpg",
+      "icon": "Users",
+      "duration": "8 ore",
+      "level": "Base",
+      "description": "Cos'è il corso\nFormazione obbligatoria per tutti i lavoratori secondo il D.Lgs 81/08. Fornisce le conoscenze base sulla sicurezza sul lavoro, i diritti e i doveri dei lavoratori, i rischi specifici dell'azienda.\n\nA chi è rivolto\nTutti i dipendenti di qualsiasi azienda, indipendentemente dal settore e dalla mansione svolta.\n\nCome si svolge\nFormazione in aula con lezioni interattive, video didattici, discussioni su casi reali, esercitazioni pratiche. Materiale personalizzato in base ai rischi specifici dell'azienda.\n\nDurata\n8 ore totali (4 ore formazione generale + 4 ore formazione specifica per il rischio)."
+    },
+    {
+      "id": "preposti",
+      "title": "Corso Preposti",
+      "subtitle": "Formazione per coordinatori e supervisori",
+      "image": "/images/training-room.jpg",
+      "icon": "Briefcase",
+      "duration": "8 ore",
+      "level": "Intermedio",
+      "description": "Cos'è il corso\nFormazione specifica per preposti e coordinatori che hanno responsabilità di vigilanza e coordinamento dei lavoratori. Approfondisce i compiti, le responsabilità e le competenze necessarie.\n\nA chi è rivolto\nPreposti, capireparto, supervisori, coordinatori di team che hanno responsabilità di vigilanza sui lavoratori.\n\nCome si svolge\nFormazione in aula con focus su leadership della sicurezza, comunicazione efficace, gestione delle emergenze e controllo del rispetto delle norme.\n\nDurata\n8 ore di formazione specifica per preposti."
+    },
+    {
+      "id": "antincendio",
+      "title": "Corso Antincendio",
+      "subtitle": "Prevenzione e gestione delle emergenze incendio",
+      "image": "/images/training-room.jpg",
+      "icon": "AlertTriangle",
+      "duration": "4 ore",
+      "level": "Base",
+      "description": "Cos'è il corso\nFormazione sulla prevenzione incendi, uso degli estintori, evacuazione e gestione delle emergenze. Essenziale per la sicurezza di ogni luogo di lavoro.\n\nA chi è rivolto\nTutti i lavoratori, con particolare attenzione a chi lavora in ambienti a rischio incendio o ha incarichi di emergenza.\n\nCome si svolge\nLezioni teoriche sulla prevenzione incendi, pratica con estintori, simulazioni di evacuazione, utilizzo di sistemi antincendio.\n\nDurata\n4 ore (teoria e pratica)."
+    },
+    {
+      "id": "primo-soccorso",
+      "title": "Corso Primo Soccorso",
+      "subtitle": "Interventi di emergenza e rianimazione cardiopolmonare",
+      "image": "/images/medical-checkup.jpg",
+      "icon": "Heart",
+      "duration": "12 ore",
+      "level": "Base",
+      "description": "Cos'è il corso\nFormazione su tecniche di primo soccorso, rianimazione cardiopolmonare (RCP), utilizzo del defibrillatore e gestione delle emergenze mediche.\n\nA chi è rivolto\nIncaricati del primo soccorso, responsabili di emergenza, lavoratori in ambienti ad alto rischio, personale medico.\n\nCome si svolge\nLezioni teoriche combinate con pratica su manichini, esercitazioni su scenari di emergenza, utilizzo di attrezzature mediche.\n\nDurata\n12 ore (4 ore teoria + 8 ore pratica)."
+    },
+    {
+      "id": "rls",
+      "title": "Corso RLS (Rappresentante Lavoratori Sicurezza)",
+      "subtitle": "Formazione per rappresentanti dei lavoratori",
+      "image": "/images/training-room.jpg",
+      "icon": "Users",
+      "duration": "32 ore",
+      "level": "Avanzato",
+      "description": "Cos'è il corso\nFormazione specifica per i Rappresentanti dei Lavoratori per la Sicurezza (RLS). Fornisce competenze su normative, diritti e doveri, partecipazione ai processi di valutazione dei rischi.\n\nA chi è rivolto\nRappresentanti eletti dai lavoratori, delegati sindacali, persone designate a rappresentare i lavoratori in materia di sicurezza.\n\nCome si svolge\nFormazione in aula con approfondimenti normativi, case study, esercitazioni su valutazione dei rischi e consultazione.\n\nDurata\n32 ore di formazione specifica."
+    },
+    {
+      "id": "dirigenti",
+      "title": "Corso Dirigenti",
+      "subtitle": "Responsabilità e compiti dei dirigenti in materia di sicurezza",
+      "image": "/images/training-room.jpg",
+      "icon": "Briefcase",
+      "duration": "16 ore",
+      "level": "Avanzato",
+      "description": "Cos'è il corso\nFormazione per dirigenti sulle responsabilità penali, civili e amministrative, gestione della sicurezza, valutazione dei rischi e comunicazione della sicurezza.\n\nA chi è rivolto\nDirigenti, manager, responsabili di funzioni aziendali, imprenditori.\n\nCome si svolge\nLezioni su aspetti normativi, responsabilità legali, gestione della sicurezza, leadership della sicurezza e comunicazione efficace.\n\nDurata\n16 ore di formazione specifica per dirigenti."
+    },
+    {
+      "id": "haccp",
+      "title": "Corso HACCP (Alimentaristi)",
+      "subtitle": "Certificazione per operatori del settore alimentare",
+      "image": "/images/training-room.jpg",
+      "icon": "Utensils",
+      "duration": "8 ore",
+      "level": "Base",
+      "description": "Cos'è il corso\nFormazione obbligatoria per operatori del settore alimentare sulla sicurezza alimentare, igiene, sistema HACCP e conformità normativa.\n\nA chi è rivolto\nOperatori della ristorazione, addetti alla manipolazione di alimenti, responsabili di cucina, personale di bar e mense.\n\nCome si svolge\nLezioni su principi HACCP, igiene alimentare, corretta manipolazione, tracciabilità e controlli di sicurezza.\n\nDurata\n8 ore di formazione certificata."
+    }
+  ],
+  "medicina": [
+    {
+      "id": "visita-preventiva",
+      "title": "Visita Medica Preventiva",
+      "subtitle": "Valutazione dello stato di salute prima dell'assunzione",
+      "description": "Cos'è\nVisita medica preventiva per valutare l'idoneità del lavoratore alla mansione specifica prima dell'assunzione.\n\nA chi è rivolto\nCandidati in fase di assunzione, lavoratori che cambiano mansione.\n\nCome si svolge\nVisita medica completa con anamnesi, esame obiettivo, test specifici in base ai rischi della mansione.\n\nDurata\nCirca 30-45 minuti per visita."
+    },
+    {
+      "id": "visita-periodica",
+      "title": "Visita Medica Periodica",
+      "subtitle": "Controllo sanitario annuale o biennale",
+      "description": "Cos'è\nVisita medica periodica per monitorare lo stato di salute durante l'attività lavorativa.\n\nA chi è rivolto\nTutti i lavoratori sottoposti a sorveglianza sanitaria.\n\nCome si svolge\nVisita medica con esami specifici in base ai rischi professionali e ai protocolli sanitari.\n\nDurata\nCirca 30-45 minuti per visita."
+    },
+    {
+      "id": "visita-post-malattia",
+      "title": "Visita Medica Post-Malattia",
+      "subtitle": "Valutazione dopo assenza per malattia prolungata",
+      "description": "Cos'è\nVisita medica per verificare l'idoneità al ritorno al lavoro dopo assenza per malattia.\n\nA chi è rivolto\nLavoratori che rientrano dopo assenza per malattia superiore a 60 giorni.\n\nCome si svolge\nVisita medica con valutazione della capacità lavorativa e eventuali limitazioni.\n\nDurata\nCirca 30-45 minuti per visita."
+    }
+  ],
+  "autorizzazioni": [
+    {
+      "id": "apertura-studio",
+      "title": "Apertura Studio Medico",
+      "subtitle": "Autorizzazione per apertura di struttura sanitaria",
+      "description": "Cos'è\nPratica completa per l'autorizzazione all'apertura di uno studio medico o struttura sanitaria.\n\nA chi è rivolto\nMedici, professionisti sanitari, strutture private.\n\nCome si svolge\nPresentazione della documentazione, verifiche igienico-sanitarie, valutazione della struttura, rilascio dell'autorizzazione.\n\nDurata\n30-60 giorni dalla presentazione della domanda."
+    },
+    {
+      "id": "accreditamento",
+      "title": "Accreditamento Struttura Sanitaria",
+      "subtitle": "Riconoscimento presso il sistema sanitario regionale",
+      "description": "Cos'è\nPratica di accreditamento per consentire alla struttura di operare con il sistema sanitario regionale.\n\nA chi è rivolto\nStrutture sanitarie private, laboratori, centri diagnostici.\n\nCome si svolge\nValutazione della struttura, verifica dei requisiti, sottoscrizione della convenzione con la regione.\n\nDurata\n60-90 giorni dal completamento della documentazione."
+    }
+  ]
+}

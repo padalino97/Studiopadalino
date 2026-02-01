@@ -2,9 +2,11 @@
   Service Page: Formazione
   - Corsi obbligatori, attestati
   - Contenuti dettagliati stile ANFOS
+  - Schede corsi con pagine dedicate
 */
 
 import ServicePageLayout from "@/components/ServicePageLayout";
+import CourseCard from "@/components/CourseCard";
 import { CheckCircle, GraduationCap, Users, Clock, Award, BookOpen, School } from "lucide-react";
 
 const faqs = [
@@ -38,53 +40,136 @@ const relatedServices = [
 
 const courses = [
   {
+    id: "rspp",
+    title: "Corso RSPP",
+    subtitle: "Responsabile Servizio Prevenzione e Protezione",
+    image: "/images/training-room.jpg",
+    icon: <Award className="w-3 h-3" />,
+    duration: "100 ore",
+    level: "Avanzato",
+    href: "/servizi/formazione/rspp",
+  },
+  {
+    id: "lavoratori",
+    title: "Sicurezza Lavoratori",
+    subtitle: "Formazione obbligatoria per tutti i dipendenti",
+    image: "/images/workplace-safety.jpg",
+    icon: <Users className="w-3 h-3" />,
+    duration: "8 ore",
+    level: "Base",
+    href: "/servizi/formazione/lavoratori",
+  },
+  {
+    id: "preposti",
+    title: "Corso Preposti",
+    subtitle: "Formazione per coordinatori e supervisori",
+    image: "/images/training-room.jpg",
+    icon: <Users className="w-3 h-3" />,
+    duration: "8 ore",
+    level: "Intermedio",
+    href: "/servizi/formazione/preposti",
+  },
+  {
+    id: "antincendio",
+    title: "Antincendio",
+    subtitle: "Prevenzione e gestione delle emergenze incendio",
+    image: "/images/training-room.jpg",
+    icon: <Award className="w-3 h-3" />,
+    duration: "4 ore",
+    level: "Base",
+    href: "/servizi/formazione/antincendio",
+  },
+  {
+    id: "primo-soccorso",
+    title: "Primo Soccorso",
+    subtitle: "Interventi di emergenza e rianimazione cardiopolmonare",
+    image: "/images/medical-checkup.jpg",
+    icon: <Award className="w-3 h-3" />,
+    duration: "12 ore",
+    level: "Base",
+    href: "/servizi/formazione/primo-soccorso",
+  },
+  {
+    id: "rls",
+    title: "Corso RLS",
+    subtitle: "Rappresentante Lavoratori per la Sicurezza",
+    image: "/images/training-room.jpg",
+    icon: <Users className="w-3 h-3" />,
+    duration: "32 ore",
+    level: "Avanzato",
+    href: "/servizi/formazione/rls",
+  },
+  {
+    id: "dirigenti",
+    title: "Corso Dirigenti",
+    subtitle: "Responsabilità e compiti dei dirigenti in sicurezza",
+    image: "/images/training-room.jpg",
+    icon: <Award className="w-3 h-3" />,
+    duration: "16 ore",
+    level: "Avanzato",
+    href: "/servizi/formazione/dirigenti",
+  },
+  {
+    id: "haccp",
+    title: "HACCP Alimentaristi",
+    subtitle: "Certificazione per operatori del settore alimentare",
+    image: "/images/training-room.jpg",
+    icon: <BookOpen className="w-3 h-3" />,
+    duration: "8 ore",
+    level: "Base",
+    href: "/servizi/formazione/haccp",
+  },
+];
+
+const courseCategories = [
+  {
     category: "Formazione Lavoratori",
     items: [
-      { name: "Formazione Generale Lavoratori", duration: "4 ore", validity: "Permanente", price: "€50" },
-      { name: "Formazione Specifica Rischio Basso", duration: "4 ore", validity: "5 anni", price: "€60" },
-      { name: "Formazione Specifica Rischio Medio", duration: "8 ore", validity: "5 anni", price: "€90" },
-      { name: "Formazione Specifica Rischio Alto", duration: "16 ore", validity: "5 anni", price: "€150" },
-      { name: "Aggiornamento Lavoratori", duration: "6 ore", validity: "5 anni", price: "€70" },
+      { name: "Formazione Generale Lavoratori", duration: "4 ore", validity: "Permanente", price: "50 EUR" },
+      { name: "Formazione Specifica Rischio Basso", duration: "4 ore", validity: "5 anni", price: "60 EUR" },
+      { name: "Formazione Specifica Rischio Medio", duration: "8 ore", validity: "5 anni", price: "90 EUR" },
+      { name: "Formazione Specifica Rischio Alto", duration: "16 ore", validity: "5 anni", price: "150 EUR" },
+      { name: "Aggiornamento Lavoratori", duration: "6 ore", validity: "5 anni", price: "70 EUR" },
     ]
   },
   {
     category: "Figure della Sicurezza",
     items: [
-      { name: "Corso Preposto", duration: "8 ore", validity: "2 anni", price: "€120" },
-      { name: "Corso Dirigente", duration: "16 ore", validity: "5 anni", price: "€200" },
-      { name: "Corso RLS", duration: "32 ore", validity: "1 anno", price: "€350" },
-      { name: "Corso RSPP Datore di Lavoro (Basso)", duration: "16 ore", validity: "5 anni", price: "€250" },
-      { name: "Corso RSPP Datore di Lavoro (Medio)", duration: "32 ore", validity: "5 anni", price: "€400" },
-      { name: "Corso RSPP Datore di Lavoro (Alto)", duration: "48 ore", validity: "5 anni", price: "€550" },
+      { name: "Corso Preposto", duration: "8 ore", validity: "2 anni", price: "120 EUR" },
+      { name: "Corso Dirigente", duration: "16 ore", validity: "5 anni", price: "200 EUR" },
+      { name: "Corso RLS", duration: "32 ore", validity: "1 anno", price: "350 EUR" },
+      { name: "Corso RSPP Datore di Lavoro (Basso)", duration: "16 ore", validity: "5 anni", price: "250 EUR" },
+      { name: "Corso RSPP Datore di Lavoro (Medio)", duration: "32 ore", validity: "5 anni", price: "400 EUR" },
+      { name: "Corso RSPP Datore di Lavoro (Alto)", duration: "48 ore", validity: "5 anni", price: "550 EUR" },
     ]
   },
   {
     category: "Emergenze",
     items: [
-      { name: "Addetto Antincendio Livello 1", duration: "4 ore", validity: "5 anni", price: "€80" },
-      { name: "Addetto Antincendio Livello 2", duration: "8 ore", validity: "5 anni", price: "€150" },
-      { name: "Addetto Antincendio Livello 3", duration: "16 ore", validity: "5 anni", price: "€250" },
-      { name: "Addetto Primo Soccorso (Gruppo B-C)", duration: "12 ore", validity: "3 anni", price: "€150" },
-      { name: "Addetto Primo Soccorso (Gruppo A)", duration: "16 ore", validity: "3 anni", price: "€200" },
+      { name: "Addetto Antincendio Livello 1", duration: "4 ore", validity: "5 anni", price: "80 EUR" },
+      { name: "Addetto Antincendio Livello 2", duration: "8 ore", validity: "5 anni", price: "150 EUR" },
+      { name: "Addetto Antincendio Livello 3", duration: "16 ore", validity: "5 anni", price: "250 EUR" },
+      { name: "Addetto Primo Soccorso (Gruppo B-C)", duration: "12 ore", validity: "3 anni", price: "150 EUR" },
+      { name: "Addetto Primo Soccorso (Gruppo A)", duration: "16 ore", validity: "3 anni", price: "200 EUR" },
     ]
   },
   {
     category: "Attrezzature di Lavoro",
     items: [
-      { name: "Carrelli Elevatori (Muletto)", duration: "12 ore", validity: "5 anni", price: "€180" },
-      { name: "Piattaforme Elevabili (PLE)", duration: "10 ore", validity: "5 anni", price: "€200" },
-      { name: "Gru su Autocarro", duration: "12 ore", validity: "5 anni", price: "€250" },
-      { name: "Escavatori e Pale", duration: "16 ore", validity: "5 anni", price: "€300" },
-      { name: "Lavori in Quota e DPI III Categoria", duration: "8 ore", validity: "5 anni", price: "€180" },
+      { name: "Carrelli Elevatori (Muletto)", duration: "12 ore", validity: "5 anni", price: "180 EUR" },
+      { name: "Piattaforme Elevabili (PLE)", duration: "10 ore", validity: "5 anni", price: "200 EUR" },
+      { name: "Gru su Autocarro", duration: "12 ore", validity: "5 anni", price: "250 EUR" },
+      { name: "Escavatori e Pale", duration: "16 ore", validity: "5 anni", price: "300 EUR" },
+      { name: "Lavori in Quota e DPI III Categoria", duration: "8 ore", validity: "5 anni", price: "180 EUR" },
     ]
   },
   {
     category: "Rischi Specifici",
     items: [
-      { name: "Rischio Elettrico (PES-PAV-PEI)", duration: "16 ore", validity: "5 anni", price: "€250" },
-      { name: "Spazi Confinati", duration: "8 ore", validity: "5 anni", price: "€200" },
-      { name: "Diisocianati (NCO)", duration: "4 ore", validity: "5 anni", price: "€80" },
-      { name: "Amianto (Operatori)", duration: "30 ore", validity: "Permanente", price: "€400" },
+      { name: "Rischio Elettrico (PES-PAV-PEI)", duration: "16 ore", validity: "5 anni", price: "250 EUR" },
+      { name: "Spazi Confinati", duration: "8 ore", validity: "5 anni", price: "200 EUR" },
+      { name: "Diisocianati (NCO)", duration: "4 ore", validity: "5 anni", price: "80 EUR" },
+      { name: "Amianto (Operatori)", duration: "30 ore", validity: "Permanente", price: "400 EUR" },
     ]
   },
 ];
@@ -111,25 +196,34 @@ export default function Formazione() {
       quickInfo={{
         duration: "Da 4 a 48 ore",
         validity: "Da 1 a 5 anni",
-        cost: "Da €50/corso + IVA",
+        cost: "Da 50 EUR/corso + IVA",
       }}
     >
-      {/* Cos'è Section */}
+      {/* Corsi Principali con Schede */}
       <section className="mb-12">
-        <h2 className="font-display text-2xl font-bold text-gray-900 mb-4">
-          L'Importanza della Formazione
+        <h2 className="font-display text-2xl font-bold text-gray-900 mb-2">
+          I Corsi Principali
         </h2>
-        <p className="text-muted-foreground mb-4 leading-relaxed">
-          La formazione sulla sicurezza non è solo un obbligo di legge, ma uno strumento 
-          fondamentale per prevenire infortuni e malattie professionali. Un lavoratore formato 
-          è consapevole dei rischi presenti nel proprio ambiente di lavoro e sa come comportarsi 
-          per proteggere sé stesso e i colleghi.
+        <p className="text-muted-foreground mb-8">
+          Scegli il corso più adatto alle tue esigenze. Clicca su "Scopri di più" per 
+          visualizzare i dettagli completi, il programma e le modalità di iscrizione.
         </p>
-        <p className="text-muted-foreground leading-relaxed">
-          Il <strong>D.Lgs 81/08</strong> e l'<strong>Accordo Stato-Regioni</strong> stabiliscono 
-          i contenuti minimi e la durata dei corsi di formazione per ogni figura aziendale. 
-          La mancata formazione comporta sanzioni penali e amministrative per il datore di lavoro.
-        </p>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {courses.map((course) => (
+            <CourseCard
+              key={course.id}
+              id={course.id}
+              title={course.title}
+              subtitle={course.subtitle}
+              image={course.image}
+              icon={course.icon}
+              duration={course.duration}
+              level={course.level}
+              href={course.href}
+            />
+          ))}
+        </div>
       </section>
 
       {/* Modalità di Erogazione */}
@@ -171,13 +265,13 @@ export default function Formazione() {
         </div>
       </section>
 
-      {/* Catalogo Corsi */}
+      {/* Catalogo Corsi Completo */}
       <section className="mb-12">
         <h2 className="font-display text-2xl font-bold text-gray-900 mb-6">
-          Catalogo Corsi e Prezzi
+          Catalogo Corsi Completo e Prezzi
         </h2>
         
-        {courses.map((category, catIndex) => (
+        {courseCategories.map((category, catIndex) => (
           <div key={catIndex} className="mb-8">
             <h3 className="font-display text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
               <Award className="w-5 h-5 text-primary" />

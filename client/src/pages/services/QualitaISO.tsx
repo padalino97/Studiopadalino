@@ -89,7 +89,7 @@ export default function QualitaISO() {
       quickInfo={{
         duration: "3-6 mesi per certificazione",
         validity: "3 anni (audit annuali)",
-        cost: "Da €2.000 + IVA",
+        cost: "Da 2.000 EUR + IVA",
       }}
     >
       {/* Cos'è Section */}
@@ -226,27 +226,27 @@ export default function QualitaISO() {
               <tbody>
                 <tr className="border-b">
                   <td className="py-3">ISO 9001 - PMI (fino a 15 dipendenti)</td>
-                  <td className="py-3">Da €2.000 + IVA</td>
+                  <td className="py-3">Da 2.000 EUR + IVA</td>
                 </tr>
                 <tr className="border-b">
                   <td className="py-3">ISO 9001 - Media impresa (16-50 dip.)</td>
-                  <td className="py-3">Da €3.500 + IVA</td>
+                  <td className="py-3">Da 3.500 EUR + IVA</td>
                 </tr>
                 <tr className="border-b">
                   <td className="py-3">ISO 14001 (aggiuntiva)</td>
-                  <td className="py-3">Da €1.500 + IVA</td>
+                  <td className="py-3">Da 1.500 EUR + IVA</td>
                 </tr>
                 <tr className="border-b">
                   <td className="py-3">ISO 45001 (aggiuntiva)</td>
-                  <td className="py-3">Da €1.500 + IVA</td>
+                  <td className="py-3">Da 1.500 EUR + IVA</td>
                 </tr>
                 <tr className="border-b">
                   <td className="py-3">Sistema integrato (9001+14001+45001)</td>
-                  <td className="py-3">Da €4.500 + IVA</td>
+                  <td className="py-3">Da 4.500 EUR + IVA</td>
                 </tr>
                 <tr>
                   <td className="py-3">Mantenimento annuale</td>
-                  <td className="py-3">Da €800/anno + IVA</td>
+                  <td className="py-3">Da 800 EUR/anno + IVA</td>
                 </tr>
               </tbody>
             </table>
