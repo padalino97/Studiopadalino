@@ -18,6 +18,13 @@ import SicurezzaCantieri from "./pages/services/SicurezzaCantieri";
 
 // Course Pages
 import RSPPCourse from "./pages/services/courses/RSPP";
+import LavoratoriCourse from "./pages/services/courses/Lavoratori";
+import PrepostiCourse from "./pages/services/courses/Preposti";
+import AntincendioCourse from "./pages/services/courses/Antincendio";
+import PrimoSoccorsoCourse from "./pages/services/courses/PrimoSoccorso";
+import RLSCourse from "./pages/services/courses/RLS";
+import DirigentiCourse from "./pages/services/courses/Dirigenti";
+import HACCPCoursePage from "./pages/services/courses/HACCP";
 
 function Router() {
   return (
@@ -36,6 +43,13 @@ function Router() {
       
       {/* Course Pages */}
       <Route path="/servizi/formazione/rspp" component={RSPPCourse} />
+      <Route path="/servizi/formazione/lavoratori" component={LavoratoriCourse} />
+      <Route path="/servizi/formazione/preposti" component={PrepostiCourse} />
+      <Route path="/servizi/formazione/antincendio" component={AntincendioCourse} />
+      <Route path="/servizi/formazione/primo-soccorso" component={PrimoSoccorsoCourse} />
+      <Route path="/servizi/formazione/rls" component={RLSCourse} />
+      <Route path="/servizi/formazione/dirigenti" component={DirigentiCourse} />
+      <Route path="/servizi/formazione/haccp" component={HACCPCoursePage} />
       
       <Route path="/404" component={NotFound} />
       {/* Final fallback route */}
