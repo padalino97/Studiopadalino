@@ -42,7 +42,7 @@ export default function AutorizzazioniSanitarie() {
       title="Autorizzazioni Sanitarie"
       subtitle="Consulenza per l'apertura, l'adeguamento e l'accreditamento di strutture sanitarie e socio-sanitarie. Assistenza completa per il rispetto dei requisiti normativi."
       badge="Strutture Mediche"
-      heroImage="/images/hero-consulting.jpg"
+      heroImage="https://files.manuscdn.com/user_upload_by_module/session_file/310519663305612957/ANKxRnMBqYzRYDwi.jpg"
       icon={<Building2 className="w-4 h-4" />}
       intro={
         <p>

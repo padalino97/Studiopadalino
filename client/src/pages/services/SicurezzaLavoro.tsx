@@ -42,7 +42,7 @@ export default function SicurezzaLavoro() {
       title="Sicurezza sul Lavoro"
       subtitle="Consulenza completa per la sicurezza nei luoghi di lavoro secondo il D.Lgs 81/08. DVR, RSPP esterno, valutazione rischi e assistenza durante le ispezioni."
       badge="D.Lgs 81/08"
-      heroImage="/images/workplace-safety.jpg"
+      heroImage="https://files.manuscdn.com/user_upload_by_module/session_file/310519663305612957/VHUFEpwvVlSkzYEd.jpg"
       icon={<Shield className="w-4 h-4" />}
       intro={
         <p>

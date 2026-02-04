@@ -62,7 +62,7 @@ export default function AboutSection() {
             {/* Main Image */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/images/hero-consulting.jpg"
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663305612957/ANKxRnMBqYzRYDwi.jpg"
                 alt="Dott. Alessandro Giuseppe Padalino"
                 className="w-full h-[500px] object-cover"
               />

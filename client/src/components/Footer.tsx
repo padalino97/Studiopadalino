@@ -13,6 +13,7 @@ const WHATSAPP_LINK = "https://wa.me/393465835685";
 
 const quickLinks = [
   { label: "Home", href: "/" },
+  { label: "Blog", href: "/blog" },
   { label: "Chi Siamo", href: "/#chi-siamo" },
   { label: "Contatti", href: "/#contatti" },
 ];
@@ -197,7 +198,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-gray-800/50">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-4">
             <p className="text-gray-500 text-sm text-center md:text-left">
               © {new Date().getFullYear()} Studio Sicurezza Padalino. Tutti i diritti riservati.
             </p>
@@ -210,6 +211,16 @@ export default function Footer() {
                 Dott. Alessandro Giuseppe Padalino
               </p>
             </div>
+          </div>
+          {/* Legal Links */}
+          <div className="flex flex-col md:flex-row justify-center items-center gap-6 text-xs text-gray-500">
+            <Link href="/privacy-policy" className="hover:text-white transition-colors">
+              Privacy Policy
+            </Link>
+            <span className="w-1 h-1 bg-gray-600 rounded-full hidden md:block" />
+            <Link href="/cookie-policy" className="hover:text-white transition-colors">
+              Cookie Policy
+            </Link>
           </div>
         </div>
       </div>

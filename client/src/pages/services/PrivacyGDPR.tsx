@@ -42,7 +42,7 @@ export default function PrivacyGDPR() {
       title="Privacy e GDPR"
       subtitle="Adeguamento al Regolamento Europeo sulla protezione dei dati personali. Analisi compliance, documentazione, formazione e nomina DPO esterno."
       badge="Reg. UE 2016/679"
-      heroImage="/images/hero-consulting.jpg"
+      heroImage="https://files.manuscdn.com/user_upload_by_module/session_file/310519663305612957/ANKxRnMBqYzRYDwi.jpg"
       icon={<Lock className="w-4 h-4" />}
       intro={
         <p>

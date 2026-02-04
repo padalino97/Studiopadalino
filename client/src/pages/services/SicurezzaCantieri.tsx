@@ -42,7 +42,7 @@ export default function SicurezzaCantieri() {
       title="Sicurezza Cantieri"
       subtitle="Coordinamento CSP e CSE, redazione PSC, POS, PIMUS, fascicolo dell'opera. Sopralluoghi e verifiche periodiche in cantiere secondo il Titolo IV del D.Lgs 81/08."
       badge="Coordinamento"
-      heroImage="/images/workplace-safety.jpg"
+      heroImage="https://files.manuscdn.com/user_upload_by_module/session_file/310519663305612957/VHUFEpwvVlSkzYEd.jpg"
       icon={<HardHat className="w-4 h-4" />}
       intro={
         <p>

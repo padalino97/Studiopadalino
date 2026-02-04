@@ -137,6 +137,18 @@ export default function Header() {
               </NavigationMenuList>
             </NavigationMenu>
 
+            <Link href="/blog">
+              <Button
+                variant="ghost"
+                className={cn(
+                  "font-medium hover:bg-primary/10 hover:text-primary",
+                  location === "/blog" && "text-primary bg-primary/5"
+                )}
+              >
+                Blog
+              </Button>
+            </Link>
+
             <button onClick={() => handleNavClick("/#chi-siamo")}>
               <Button variant="ghost" className="font-medium hover:bg-primary/10 hover:text-primary">
                 Chi Siamo
@@ -204,6 +216,12 @@ export default function Header() {
                   </Link>
                 ))}
               </div>
+
+              <Link href="/blog" onClick={() => setIsMobileMenuOpen(false)}>
+                <Button variant="ghost" className="w-full justify-start font-medium hover:bg-primary/10 hover:text-primary">
+                  Blog
+                </Button>
+              </Link>
 
               <button onClick={() => handleNavClick("/#chi-siamo")}>
                 <Button variant="ghost" className="w-full justify-start font-medium hover:bg-primary/10 hover:text-primary">

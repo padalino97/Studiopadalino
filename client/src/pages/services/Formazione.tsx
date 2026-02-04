@@ -43,7 +43,7 @@ const courses = [
     id: "rspp",
     title: "Corso RSPP",
     subtitle: "Responsabile Servizio Prevenzione e Protezione",
-    image: "/images/training-room.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663305612957/zyQDylVlaeLOnFjk.jpg",
     icon: <Award className="w-3 h-3" />,
     duration: "100 ore",
     level: "Avanzato",
@@ -53,7 +53,7 @@ const courses = [
     id: "lavoratori",
     title: "Sicurezza Lavoratori",
     subtitle: "Formazione obbligatoria per tutti i dipendenti",
-    image: "/images/workplace-safety.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663305612957/VHUFEpwvVlSkzYEd.jpg",
     icon: <Users className="w-3 h-3" />,
     duration: "8 ore",
     level: "Base",
@@ -63,7 +63,7 @@ const courses = [
     id: "preposti",
     title: "Corso Preposti",
     subtitle: "Formazione per coordinatori e supervisori",
-    image: "/images/training-room.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663305612957/zyQDylVlaeLOnFjk.jpg",
     icon: <Users className="w-3 h-3" />,
     duration: "8 ore",
     level: "Intermedio",
@@ -73,7 +73,7 @@ const courses = [
     id: "antincendio",
     title: "Antincendio",
     subtitle: "Prevenzione e gestione delle emergenze incendio",
-    image: "/images/training-room.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663305612957/zyQDylVlaeLOnFjk.jpg",
     icon: <Award className="w-3 h-3" />,
     duration: "4 ore",
     level: "Base",
@@ -83,7 +83,7 @@ const courses = [
     id: "primo-soccorso",
     title: "Primo Soccorso",
     subtitle: "Interventi di emergenza e rianimazione cardiopolmonare",
-    image: "/images/medical-checkup.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663305612957/yqOtMscJOKgzwgVm.jpg",
     icon: <Award className="w-3 h-3" />,
     duration: "12 ore",
     level: "Base",
@@ -93,7 +93,7 @@ const courses = [
     id: "rls",
     title: "Corso RLS",
     subtitle: "Rappresentante Lavoratori per la Sicurezza",
-    image: "/images/training-room.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663305612957/zyQDylVlaeLOnFjk.jpg",
     icon: <Users className="w-3 h-3" />,
     duration: "32 ore",
     level: "Avanzato",
@@ -103,7 +103,7 @@ const courses = [
     id: "dirigenti",
     title: "Corso Dirigenti",
     subtitle: "Responsabilità e compiti dei dirigenti in sicurezza",
-    image: "/images/training-room.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663305612957/zyQDylVlaeLOnFjk.jpg",
     icon: <Award className="w-3 h-3" />,
     duration: "16 ore",
     level: "Avanzato",
@@ -113,7 +113,7 @@ const courses = [
     id: "haccp",
     title: "HACCP Alimentaristi",
     subtitle: "Certificazione per operatori del settore alimentare",
-    image: "/images/training-room.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663305612957/zyQDylVlaeLOnFjk.jpg",
     icon: <BookOpen className="w-3 h-3" />,
     duration: "8 ore",
     level: "Base",
@@ -180,7 +180,7 @@ export default function Formazione() {
       title="Formazione Sicurezza sul Lavoro"
       subtitle="Corsi obbligatori per lavoratori, preposti, dirigenti, RSPP, RLS, antincendio e primo soccorso. Attestati validi e riconosciuti su tutto il territorio nazionale."
       badge="Corsi Certificati"
-      heroImage="/images/training-room.jpg"
+      heroImage="https://files.manuscdn.com/user_upload_by_module/session_file/310519663305612957/zyQDylVlaeLOnFjk.jpg"
       icon={<School className="w-4 h-4" />}
       intro={
         <p>

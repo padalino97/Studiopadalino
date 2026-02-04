@@ -4,6 +4,9 @@ import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import CookieBanner from "./components/CookieBanner";
+import SchemaMarkup from "./components/SchemaMarkup";
+import Breadcrumbs from "./components/Breadcrumbs";
 import Home from "./pages/Home";
 
 // Service Pages
@@ -12,9 +15,11 @@ import MedicinaLavoro from "./pages/services/MedicinaLavoro";
 import Formazione from "./pages/services/Formazione";
 import AutorizzazioniSanitarie from "./pages/services/AutorizzazioniSanitarie";
 import QualitaISO from "./pages/services/QualitaISO";
-import HACCP from "./pages/services/HACCP";
 import PrivacyGDPR from "./pages/services/PrivacyGDPR";
 import SicurezzaCantieri from "./pages/services/SicurezzaCantieri";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import CookiePolicy from "./pages/CookiePolicy";
+import Blog from "./pages/Blog";
 
 // Course Pages
 import RSPPCourse from "./pages/services/courses/RSPP";
@@ -37,7 +42,7 @@ function Router() {
       <Route path="/servizi/formazione" component={Formazione} />
       <Route path="/servizi/autorizzazioni-sanitarie" component={AutorizzazioniSanitarie} />
       <Route path="/servizi/qualita-iso" component={QualitaISO} />
-      <Route path="/servizi/haccp" component={HACCP} />
+      <Route path="/servizi/haccp" component={HACCPCoursePage} />
       <Route path="/servizi/privacy-gdpr" component={PrivacyGDPR} />
       <Route path="/servizi/sicurezza-cantieri" component={SicurezzaCantieri} />
       
@@ -50,6 +55,13 @@ function Router() {
       <Route path="/servizi/formazione/rls" component={RLSCourse} />
       <Route path="/servizi/formazione/dirigenti" component={DirigentiCourse} />
       <Route path="/servizi/formazione/haccp" component={HACCPCoursePage} />
+      
+      {/* Blog Pages */}
+      <Route path="/blog" component={Blog} />
+      
+      {/* Legal Pages */}
+      <Route path="/privacy-policy" component={PrivacyPolicy} />
+      <Route path="/cookie-policy" component={CookiePolicy} />
       
       <Route path="/404" component={NotFound} />
       {/* Final fallback route */}
@@ -64,7 +76,10 @@ function App() {
       <ThemeProvider defaultTheme="light">
         <TooltipProvider>
           <Toaster />
+          <SchemaMarkup />
+          <Breadcrumbs />
           <Router />
+          <CookieBanner />
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>

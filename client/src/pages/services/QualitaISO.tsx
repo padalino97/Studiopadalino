@@ -73,7 +73,7 @@ export default function QualitaISO() {
       title="Sistemi di Qualità ISO"
       subtitle="Implementazione e certificazione ISO 9001, ISO 14001, ISO 45001, ISO 37001. Audit interni, formazione e assistenza per il mantenimento del sistema."
       badge="Certificazioni ISO"
-      heroImage="/images/quality-certification.jpg"
+      heroImage="https://files.manuscdn.com/user_upload_by_module/session_file/310519663305612957/sMQFIryJSEcCgEtr.jpg"
       icon={<Award className="w-4 h-4" />}
       intro={
         <p>

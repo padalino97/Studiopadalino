@@ -42,7 +42,7 @@ export default function MedicinaLavoro() {
       title="Medicina del Lavoro"
       subtitle="Sorveglianza sanitaria, nomina medico competente, visite mediche preventive e periodiche. Tutela della salute dei lavoratori secondo il D.Lgs 81/08."
       badge="Sorveglianza Sanitaria"
-      heroImage="/images/medical-checkup.jpg"
+      heroImage="https://files.manuscdn.com/user_upload_by_module/session_file/310519663305612957/yqOtMscJOKgzwgVm.jpg"
       icon={<Heart className="w-4 h-4" />}
       intro={
         <p>
