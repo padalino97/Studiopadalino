@@ -36,6 +36,13 @@ import HACCPCoursePage from "./pages/services/courses/HACCP";
 import RsppOnline from "./pages/services/courses/RsppOnline";
 import LavoratoriOnline from "./pages/services/courses/LavoratoriOnline";
 import DirigentiOnline from "./pages/services/courses/DirigentiOnline";
+import AsppOnline from "./pages/services/courses/AsppOnline";
+import RlsOnline from "./pages/services/courses/RlsOnline";
+import PrivacyOnline from "./pages/services/courses/PrivacyOnline";
+import HACCPOnline from "./pages/services/courses/HACCPOnline";
+import DiisocianatiOnline from "./pages/services/courses/DiisocianatiOnline";
+import AntincendioOnline from "./pages/services/courses/AntincendioOnline";
+import PrimoSocorsoOnline from "./pages/services/courses/PrimoSocorsoOnline";
 
 // New Presence Courses
 import PrepostiPresenza from "./pages/services/courses/PrepostiPresenza";
@@ -70,6 +77,13 @@ function Router() {
       <Route path="/formazione/rspp-online" component={RsppOnline} />
       <Route path="/formazione/lavoratori-online" component={LavoratoriOnline} />
       <Route path="/formazione/dirigenti-online" component={DirigentiOnline} />
+      <Route path="/formazione/aspp-online" component={AsppOnline} />
+      <Route path="/formazione/rls-online" component={RlsOnline} />
+      <Route path="/formazione/privacy-online" component={PrivacyOnline} />
+      <Route path="/formazione/haccp-online" component={HACCPOnline} />
+      <Route path="/formazione/diisocianati-online" component={DiisocianatiOnline} />
+      <Route path="/formazione/antincendio-online" component={AntincendioOnline} />
+      <Route path="/formazione/primo-soccorso-online" component={PrimoSocorsoOnline} />
       
       {/* New Presence Courses */}
       <Route path="/formazione/preposti-presenza" component={PrepostiPresenza} />

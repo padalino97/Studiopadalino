@@ -1,17 +1,15 @@
 /*
   Design: Professional Consulting - Training Focus
   Page: Formazione - Corsi Online e Presenza
+  - Layout semplice senza filtri
+  - TUTTI gli argomenti e corsi
   - Separazione chiara Online vs Presenza
-  - Filtri intelligenti
-  - Argomenti corretti e accurati
-  - Layout moderno e professionale
 */
 
-import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import { MessageCircle, Clock, Users, MapPin, Zap, CheckCircle, Filter } from "lucide-react";
+import { MessageCircle, Clock, MapPin, Zap, BookOpen } from "lucide-react";
 
 // Dati Corsi Online
 const corsiOnline = [
@@ -20,9 +18,6 @@ const corsiOnline = [
     title: "Aggiornamento RSPP Datore",
     duration: "8 ore",
     description: "Aggiornamento obbligatorio ogni 5 anni per Responsabili della Sicurezza",
-    figure: "RSPP",
-    tipo: "Aggiornamento",
-    settore: "Tutti",
     url: "/formazione/rspp-online"
   },
   {
@@ -30,9 +25,6 @@ const corsiOnline = [
     title: "Aggiornamento Lavoratori",
     duration: "6 ore",
     description: "Aggiornamento obbligatorio ogni 5 anni per tutti i lavoratori",
-    figure: "Lavoratori",
-    tipo: "Aggiornamento",
-    settore: "Tutti",
     url: "/formazione/lavoratori-online"
   },
   {
@@ -40,9 +32,6 @@ const corsiOnline = [
     title: "Aggiornamento Dirigenti",
     duration: "6 ore",
     description: "Aggiornamento obbligatorio ogni 5 anni per dirigenti e quadri",
-    figure: "Dirigenti",
-    tipo: "Aggiornamento",
-    settore: "Tutti",
     url: "/formazione/dirigenti-online"
   },
   {
@@ -50,9 +39,6 @@ const corsiOnline = [
     title: "Aggiornamento ASPP",
     duration: "40 ore",
     description: "Aggiornamento quinquennale per Addetti Servizio Prevenzione e Protezione",
-    figure: "ASPP",
-    tipo: "Aggiornamento",
-    settore: "Tutti",
     url: "/formazione/aspp-online"
   },
   {
@@ -60,9 +46,6 @@ const corsiOnline = [
     title: "Aggiornamento RLS",
     duration: "8 ore",
     description: "Aggiornamento annuale per Rappresentanti dei Lavoratori per la Sicurezza",
-    figure: "RLS",
-    tipo: "Aggiornamento",
-    settore: "Tutti",
     url: "/formazione/rls-online"
   },
   {
@@ -70,9 +53,6 @@ const corsiOnline = [
     title: "Privacy GDPR",
     duration: "1 ora",
     description: "Formazione sulla protezione dei dati personali e conformità GDPR",
-    figure: "Tutti",
-    tipo: "Specializzazione",
-    settore: "Tutti",
     url: "/formazione/privacy-online"
   },
   {
@@ -80,10 +60,28 @@ const corsiOnline = [
     title: "HACCP per Alimentaristi",
     duration: "3 ore",
     description: "Formazione su Igiene e HACCP per manipolazione alimenti",
-    figure: "Alimentaristi",
-    tipo: "Specializzazione",
-    settore: "Alimentare",
     url: "/formazione/haccp-online"
+  },
+  {
+    id: "diisocianati-online",
+    title: "Diisocianati (NCO)",
+    duration: "3 ore",
+    description: "Formazione su utilizzo sicuro di sostanze chimiche pericolose",
+    url: "/formazione/diisocianati-online"
+  },
+  {
+    id: "antincendio-online",
+    title: "Antincendio Online",
+    duration: "4 ore",
+    description: "Modulo teorico su prevenzione e gestione incendi",
+    url: "/formazione/antincendio-online"
+  },
+  {
+    id: "primo-soccorso-online",
+    title: "Primo Soccorso Online",
+    duration: "6 ore",
+    description: "Modulo teorico su tecniche di primo intervento",
+    url: "/formazione/primo-soccorso-online"
   },
 ];
 
@@ -94,9 +92,6 @@ const corsiPresenza = [
     title: "Corso Preposti",
     duration: "12 ore",
     description: "Formazione pratica per preposti e capi cantiere (OGNI 2 ANNI - Nuovo Accordo 2025)",
-    figure: "Preposti",
-    tipo: "Formazione",
-    settore: "Edilizia",
     location: "Catania - Zona Industriale",
     url: "/formazione/preposti-presenza"
   },
@@ -105,31 +100,46 @@ const corsiPresenza = [
     title: "Carrelli Elevatori",
     duration: "4 ore",
     description: "Abilitazione pratica con macchine reali nel nostro campo prove",
-    figure: "Operatori",
-    tipo: "Abilitazione",
-    settore: "Logistica",
     location: "Catania - Zona Industriale",
     url: "/formazione/carrelli-elevatori"
+  },
+  {
+    id: "muletti",
+    title: "Muletti",
+    duration: "4 ore",
+    description: "Abilitazione pratica con muletti nel nostro campo prove",
+    location: "Catania - Zona Industriale",
+    url: "/formazione/muletti"
   },
   {
     id: "escavatori",
     title: "Escavatori e Pale",
     duration: "4 ore",
     description: "Abilitazione pratica con escavatori reali nel nostro campo prove",
-    figure: "Operatori",
-    tipo: "Abilitazione",
-    settore: "Edilizia",
     location: "Catania - Zona Industriale",
     url: "/formazione/escavatori"
+  },
+  {
+    id: "ple",
+    title: "Piattaforme Elevabili (PLE)",
+    duration: "4 ore",
+    description: "Abilitazione pratica con piattaforme elevabili",
+    location: "Catania - Zona Industriale",
+    url: "/formazione/ple"
+  },
+  {
+    id: "gru-autocarro",
+    title: "Gru su Autocarro",
+    duration: "4 ore",
+    description: "Abilitazione pratica per operatori gru su autocarro",
+    location: "Catania - Zona Industriale",
+    url: "/formazione/gru-autocarro"
   },
   {
     id: "antincendio",
     title: "Antincendio",
     duration: "8 ore",
     description: "Corso pratico con estintori reali e simulazioni di emergenza",
-    figure: "Incaricati",
-    tipo: "Formazione",
-    settore: "Tutti",
     location: "Catania - Zona Industriale",
     url: "/formazione/antincendio"
   },
@@ -138,22 +148,40 @@ const corsiPresenza = [
     title: "Primo Soccorso",
     duration: "16 ore",
     description: "Formazione pratica su tecniche di primo intervento e rianimazione",
-    figure: "Addetti",
-    tipo: "Formazione",
-    settore: "Tutti",
     location: "Catania - Zona Industriale",
     url: "/formazione/primo-soccorso"
   },
   {
-    id: "diisocianati",
-    title: "Diisocianati (NCO)",
-    duration: "3 ore",
-    description: "Formazione su utilizzo sicuro di sostanze chimiche pericolose",
-    figure: "Operatori",
-    tipo: "Specializzazione",
-    settore: "Industria",
+    id: "lavori-quota",
+    title: "Lavori in Quota e DPI III Categoria",
+    duration: "8 ore",
+    description: "Formazione su lavori in altura e utilizzo dispositivi protezione",
     location: "Catania - Zona Industriale",
-    url: "/formazione/diisocianati"
+    url: "/formazione/lavori-quota"
+  },
+  {
+    id: "rischio-elettrico",
+    title: "Rischio Elettrico (PES-PAV-PEI)",
+    duration: "16 ore",
+    description: "Formazione su sicurezza lavori elettrici secondo norma CEI 11-27",
+    location: "Catania - Zona Industriale",
+    url: "/formazione/rischio-elettrico"
+  },
+  {
+    id: "spazi-confinati",
+    title: "Spazi Confinati",
+    duration: "8 ore",
+    description: "Formazione su accesso e lavoro in spazi confinati",
+    location: "Catania - Zona Industriale",
+    url: "/formazione/spazi-confinati"
+  },
+  {
+    id: "amianto",
+    title: "Amianto (Operatori)",
+    duration: "30 ore",
+    description: "Formazione completa per operatori bonifica amianto",
+    location: "Catania - Zona Industriale",
+    url: "/formazione/amianto"
   },
 ];
 
@@ -162,10 +190,10 @@ function CourseCard({ course, isOnline }: { course: typeof corsiOnline[0] | type
   return (
     <a
       href={course.url}
-      className="group block bg-white border border-border rounded-xl p-6 hover:shadow-lg hover:border-primary transition-all duration-300"
+      className="group block bg-white border border-border rounded-xl p-6 hover:shadow-lg hover:border-primary transition-all duration-300 h-full"
     >
       <div className="flex items-start justify-between mb-4">
-        <div>
+        <div className="flex-1">
           <h3 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors">
             {course.title}
           </h3>
@@ -181,7 +209,7 @@ function CourseCard({ course, isOnline }: { course: typeof corsiOnline[0] | type
         {!isOnline && "location" in course && (
           <div className="flex items-center gap-1">
             <MapPin className="w-4 h-4" />
-            <span>{course.location}</span>
+            <span className="text-xs">{course.location}</span>
           </div>
         )}
       </div>
@@ -195,24 +223,6 @@ function CourseCard({ course, isOnline }: { course: typeof corsiOnline[0] | type
 }
 
 export default function FormazioneNew() {
-  const [filterFigura, setFilterFigura] = useState("Tutti");
-  const [filterTipo, setFilterTipo] = useState("Tutti");
-
-  // Estrai figure e tipi unici
-  const figure = ["Tutti", ...Array.from(new Set([...corsiOnline, ...corsiPresenza].map(c => c.figure)))];
-  const tipi = ["Tutti", ...Array.from(new Set([...corsiOnline, ...corsiPresenza].map(c => c.tipo)))];
-
-  // Filtra corsi
-  const corsiOnlineFiltrati = corsiOnline.filter(c => 
-    (filterFigura === "Tutti" || c.figure === filterFigura) &&
-    (filterTipo === "Tutti" || c.tipo === filterTipo)
-  );
-
-  const corsiPresenzaFiltrati = corsiPresenza.filter(c => 
-    (filterFigura === "Tutti" || c.figure === filterFigura) &&
-    (filterTipo === "Tutti" || c.tipo === filterTipo)
-  );
-
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
@@ -228,52 +238,9 @@ export default function FormazioneNew() {
                 Formazione Professionale
               </h1>
               <p className="text-lg text-muted-foreground mb-6">
-                Corsi online e in presenza conformi al Nuovo Accordo Stato-Regioni 2025 e D.Lgs 81/08
+                Corsi online e in presenza conformi al Nuovo Accordo Stato-Regioni 2025 e D.Lgs 81/08. 
+                Formazione continua per la sicurezza sul lavoro e la qualità aziendale.
               </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Filtri */}
-        <section className="py-8 bg-white border-b border-border sticky top-20 z-40">
-          <div className="container">
-            <div className="flex items-center gap-4 mb-6">
-              <Filter className="w-5 h-5 text-primary" />
-              <h2 className="text-lg font-bold text-foreground">Filtra Corsi</h2>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              {/* Filtro Figura */}
-              <div>
-                <label className="block text-sm font-semibold text-foreground mb-3">
-                  Figura Professionale
-                </label>
-                <select
-                  value={filterFigura}
-                  onChange={(e) => setFilterFigura(e.target.value)}
-                  className="w-full px-4 py-2 border border-border rounded-lg bg-white text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                >
-                  {figure.map(f => (
-                    <option key={f} value={f}>{f}</option>
-                  ))}
-                </select>
-              </div>
-
-              {/* Filtro Tipo */}
-              <div>
-                <label className="block text-sm font-semibold text-foreground mb-3">
-                  Tipo Corso
-                </label>
-                <select
-                  value={filterTipo}
-                  onChange={(e) => setFilterTipo(e.target.value)}
-                  className="w-full px-4 py-2 border border-border rounded-lg bg-white text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                >
-                  {tipi.map(t => (
-                    <option key={t} value={t}>{t}</option>
-                  ))}
-                </select>
-              </div>
             </div>
           </div>
         </section>
@@ -286,17 +253,11 @@ export default function FormazioneNew() {
               <h2 className="text-3xl font-bold text-foreground">Corsi Online (E-Learning 24/7)</h2>
             </div>
 
-            {corsiOnlineFiltrati.length > 0 ? (
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {corsiOnlineFiltrati.map(corso => (
-                  <CourseCard key={corso.id} course={corso} isOnline={true} />
-                ))}
-              </div>
-            ) : (
-              <div className="text-center py-12 bg-gray-50 rounded-lg">
-                <p className="text-muted-foreground">Nessun corso online corrisponde ai filtri selezionati</p>
-              </div>
-            )}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {corsiOnline.map(corso => (
+                <CourseCard key={corso.id} course={corso} isOnline={true} />
+              ))}
+            </div>
           </div>
         </section>
 
@@ -308,17 +269,11 @@ export default function FormazioneNew() {
               <h2 className="text-3xl font-bold text-foreground">Corsi in Presenza (Pratica Obbligatoria)</h2>
             </div>
 
-            {corsiPresenzaFiltrati.length > 0 ? (
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {corsiPresenzaFiltrati.map(corso => (
-                  <CourseCard key={corso.id} course={corso} isOnline={false} />
-                ))}
-              </div>
-            ) : (
-              <div className="text-center py-12 bg-white rounded-lg">
-                <p className="text-muted-foreground">Nessun corso in presenza corrisponde ai filtri selezionati</p>
-              </div>
-            )}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {corsiPresenza.map(corso => (
+                <CourseCard key={corso.id} course={corso} isOnline={false} />
+              ))}
+            </div>
           </div>
         </section>
 

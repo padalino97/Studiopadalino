@@ -72,10 +72,10 @@ export default function CourseCard({
             </div>
 
             {/* CTA Button */}
-            <button className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold py-3 rounded-lg hover:shadow-lg transition-all duration-300 group/btn">
+            <div className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold py-3 rounded-lg hover:shadow-lg transition-all duration-300 group/btn cursor-pointer">
               Scopri di più
               <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-            </button>
+            </div>
           </div>
         </div>
       </a>
