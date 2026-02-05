@@ -31,6 +31,15 @@ import RLSCourse from "./pages/services/courses/RLS";
 import DirigentiCourse from "./pages/services/courses/Dirigenti";
 import HACCPCoursePage from "./pages/services/courses/HACCP";
 
+// New Online Courses
+import RsppOnline from "./pages/services/courses/RsppOnline";
+import LavoratoriOnline from "./pages/services/courses/LavoratoriOnline";
+import DirigentiOnline from "./pages/services/courses/DirigentiOnline";
+
+// New Presence Courses
+import PrepostiPresenza from "./pages/services/courses/PrepostiPresenza";
+import CarrelliElevatori from "./pages/services/courses/CarrelliElevatori";
+
 function Router() {
   return (
     <Switch>
@@ -46,7 +55,7 @@ function Router() {
       <Route path="/servizi/privacy-gdpr" component={PrivacyGDPR} />
       <Route path="/servizi/sicurezza-cantieri" component={SicurezzaCantieri} />
       
-      {/* Course Pages */}
+      {/* Course Pages - Old */}
       <Route path="/servizi/formazione/rspp" component={RSPPCourse} />
       <Route path="/servizi/formazione/lavoratori" component={LavoratoriCourse} />
       <Route path="/servizi/formazione/preposti" component={PrepostiCourse} />
@@ -55,6 +64,15 @@ function Router() {
       <Route path="/servizi/formazione/rls" component={RLSCourse} />
       <Route path="/servizi/formazione/dirigenti" component={DirigentiCourse} />
       <Route path="/servizi/formazione/haccp" component={HACCPCoursePage} />
+      
+      {/* New Online Courses */}
+      <Route path="/formazione/rspp-online" component={RsppOnline} />
+      <Route path="/formazione/lavoratori-online" component={LavoratoriOnline} />
+      <Route path="/formazione/dirigenti-online" component={DirigentiOnline} />
+      
+      {/* New Presence Courses */}
+      <Route path="/formazione/preposti-presenza" component={PrepostiPresenza} />
+      <Route path="/formazione/carrelli-elevatori" component={CarrelliElevatori} />
       
       {/* Blog Pages */}
       <Route path="/blog" component={Blog} />
