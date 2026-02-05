@@ -326,7 +326,7 @@ export default function ServicePageLayout({
                               <span className="text-amber-600 font-bold">€</span>
                             </div>
                             <div>
-                              <p className="text-xs text-muted-foreground">Costo indicativo</p>
+                              <p className="text-xs text-muted-foreground"></p>
                               <p className="font-semibold text-gray-900">{quickInfo.cost}</p>
                             </div>
                           </div>

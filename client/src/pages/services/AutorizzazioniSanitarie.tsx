@@ -58,7 +58,7 @@ export default function AutorizzazioniSanitarie() {
       quickInfo={{
         duration: "60-180 giorni",
         validity: "Permanente (con verifiche)",
-        cost: "Da €1.500 + IVA",
+        cost: "Contattaci per un preventivo",
       }}
     >
       {/* Cos'è Section */}
@@ -236,33 +236,33 @@ export default function AutorizzazioniSanitarie() {
               <thead>
                 <tr className="border-b">
                   <th className="text-left py-3 font-semibold">Tipologia</th>
-                  <th className="text-left py-3 font-semibold">Costo indicativo</th>
+                  <th className="text-left py-3 font-semibold"></th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="border-b">
                   <td className="py-3">Studio medico singolo</td>
-                  <td className="py-3">Da €1.500 + IVA</td>
+                  <td className="py-3">Contattaci per un preventivo</td>
                 </tr>
                 <tr className="border-b">
                   <td className="py-3">Ambulatorio/Poliambulatorio</td>
-                  <td className="py-3">Da €2.500 + IVA</td>
+                  <td className="py-3">Contattaci per un preventivo</td>
                 </tr>
                 <tr className="border-b">
                   <td className="py-3">Centro di fisioterapia</td>
-                  <td className="py-3">Da €2.000 + IVA</td>
+                  <td className="py-3">Contattaci per un preventivo</td>
                 </tr>
                 <tr className="border-b">
                   <td className="py-3">Laboratorio analisi</td>
-                  <td className="py-3">Da €4.000 + IVA</td>
+                  <td className="py-3">Contattaci per un preventivo</td>
                 </tr>
                 <tr className="border-b">
                   <td className="py-3">Struttura residenziale (RSA)</td>
-                  <td className="py-3">Da €8.000 + IVA</td>
+                  <td className="py-3">Contattaci per un preventivo</td>
                 </tr>
                 <tr>
                   <td className="py-3">Accreditamento (aggiuntivo)</td>
-                  <td className="py-3">Da €3.000 + IVA</td>
+                  <td className="py-3">Contattaci per un preventivo</td>
                 </tr>
               </tbody>
             </table>

@@ -58,7 +58,7 @@ export default function MedicinaLavoro() {
       quickInfo={{
         duration: "Visite in 24-48h dalla richiesta",
         validity: "Secondo protocollo sanitario",
-        cost: "Da €40/visita + IVA",
+        cost: "Contattaci per un preventivo",
       }}
     >
       {/* Cos'è Section */}
@@ -208,29 +208,29 @@ export default function MedicinaLavoro() {
               <thead>
                 <tr className="border-b">
                   <th className="text-left py-3 font-semibold">Servizio</th>
-                  <th className="text-left py-3 font-semibold">Costo indicativo</th>
+                  <th className="text-left py-3 font-semibold"></th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="border-b">
                   <td className="py-3">Visita medica base</td>
-                  <td className="py-3">Da €40 + IVA</td>
+                  <td className="py-3">Contattaci per un preventivo</td>
                 </tr>
                 <tr className="border-b">
                   <td className="py-3">Visita + audiometria + spirometria</td>
-                  <td className="py-3">Da €70 + IVA</td>
+                  <td className="py-3">Contattaci per un preventivo</td>
                 </tr>
                 <tr className="border-b">
                   <td className="py-3">Visita completa (tutti gli esami)</td>
-                  <td className="py-3">Da €120 + IVA</td>
+                  <td className="py-3">Contattaci per un preventivo</td>
                 </tr>
                 <tr className="border-b">
                   <td className="py-3">Drug test</td>
-                  <td className="py-3">Da €35 + IVA</td>
+                  <td className="py-3">Contattaci per un preventivo</td>
                 </tr>
                 <tr>
                   <td className="py-3">Canone annuale medico competente</td>
-                  <td className="py-3">Da €400/anno + IVA</td>
+                  <td className="py-3">Contattaci per un preventivo</td>
                 </tr>
               </tbody>
             </table>

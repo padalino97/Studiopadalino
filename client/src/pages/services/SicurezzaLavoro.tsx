@@ -58,7 +58,7 @@ export default function SicurezzaLavoro() {
       quickInfo={{
         duration: "DVR in 7-15 giorni lavorativi",
         validity: "Aggiornamento ad ogni modifica",
-        cost: "A partire da €300 + IVA",
+        cost: "Contattaci per un preventivo",
       }}
     >
       {/* Cos'è Section */}
@@ -210,29 +210,29 @@ export default function SicurezzaLavoro() {
               <thead>
                 <tr className="border-b">
                   <th className="text-left py-3 font-semibold">Servizio</th>
-                  <th className="text-left py-3 font-semibold">Costo indicativo</th>
+                  <th className="text-left py-3 font-semibold"></th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="border-b">
                   <td className="py-3">DVR base (fino a 10 dipendenti)</td>
-                  <td className="py-3">Da €300 + IVA</td>
+                  <td className="py-3">Contattaci per un preventivo</td>
                 </tr>
                 <tr className="border-b">
                   <td className="py-3">DVR completo (11-50 dipendenti)</td>
-                  <td className="py-3">Da €500 + IVA</td>
+                  <td className="py-3">Contattaci per un preventivo</td>
                 </tr>
                 <tr className="border-b">
                   <td className="py-3">RSPP esterno (canone annuale)</td>
-                  <td className="py-3">Da €600/anno + IVA</td>
+                  <td className="py-3">Contattaci per un preventivo</td>
                 </tr>
                 <tr className="border-b">
                   <td className="py-3">Valutazione rischio rumore</td>
-                  <td className="py-3">Da €250 + IVA</td>
+                  <td className="py-3">Contattaci per un preventivo</td>
                 </tr>
                 <tr>
                   <td className="py-3">POS cantiere</td>
-                  <td className="py-3">Da €200 + IVA</td>
+                  <td className="py-3">Contattaci per un preventivo</td>
                 </tr>
               </tbody>
             </table>

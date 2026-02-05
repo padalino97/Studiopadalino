@@ -59,7 +59,7 @@ export default function PrivacyGDPR() {
       quickInfo={{
         duration: "Adeguamento in 30-60 giorni",
         validity: "Aggiornamento continuo",
-        cost: "Da €500 + IVA",
+        cost: "Contattaci per un preventivo",
       }}
     >
       {/* Cos'è Section */}
@@ -229,33 +229,32 @@ export default function PrivacyGDPR() {
               <thead>
                 <tr className="border-b">
                   <th className="text-left py-3 font-semibold">Servizio</th>
-                  <th className="text-left py-3 font-semibold">Costo indicativo</th>
+                  <th className="text-left py-3 font-semibold"></th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="border-b">
                   <td className="py-3">Adeguamento base (piccola impresa)</td>
-                  <td className="py-3">Da €500 + IVA</td>
+                  <td className="py-3">Contattaci per un preventivo</td>
                 </tr>
                 <tr className="border-b">
                   <td className="py-3">Adeguamento completo (media impresa)</td>
-                  <td className="py-3">Da €1.500 + IVA</td>
+                  <td className="py-3">Contattaci per un preventivo</td>
                 </tr>
                 <tr className="border-b">
                   <td className="py-3">DPO esterno (canone annuale)</td>
-                  <td className="py-3">Da €1.200/anno + IVA</td>
+                  <td className="py-3">Contattaci per un preventivo</td>
                 </tr>
                 <tr className="border-b">
                   <td className="py-3">Corso formazione privacy (4 ore)</td>
-                  <td className="py-3">€80/persona + IVA</td>
                 </tr>
                 <tr className="border-b">
                   <td className="py-3">Audit privacy periodico</td>
-                  <td className="py-3">Da €300 + IVA</td>
+                  <td className="py-3">Contattaci per un preventivo</td>
                 </tr>
                 <tr>
                   <td className="py-3">DPIA (Valutazione d'impatto)</td>
-                  <td className="py-3">Da €800 + IVA</td>
+                  <td className="py-3">Contattaci per un preventivo</td>
                 </tr>
               </tbody>
             </table>

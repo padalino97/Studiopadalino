@@ -125,51 +125,51 @@ const courseCategories = [
   {
     category: "Formazione Lavoratori",
     items: [
-      { name: "Formazione Generale Lavoratori", duration: "4 ore", validity: "Permanente", price: "50 EUR" },
-      { name: "Formazione Specifica Rischio Basso", duration: "4 ore", validity: "5 anni", price: "60 EUR" },
-      { name: "Formazione Specifica Rischio Medio", duration: "8 ore", validity: "5 anni", price: "90 EUR" },
-      { name: "Formazione Specifica Rischio Alto", duration: "16 ore", validity: "5 anni", price: "150 EUR" },
-      { name: "Aggiornamento Lavoratori", duration: "6 ore", validity: "5 anni", price: "70 EUR" },
+      { name: "Formazione Generale Lavoratori", duration: "4 ore", validity: "Permanente" },
+      { name: "Formazione Specifica Rischio Basso", duration: "4 ore", validity: "5 anni" },
+      { name: "Formazione Specifica Rischio Medio", duration: "8 ore", validity: "5 anni" },
+      { name: "Formazione Specifica Rischio Alto", duration: "16 ore", validity: "5 anni" },
+      { name: "Aggiornamento Lavoratori", duration: "6 ore", validity: "5 anni" },
     ]
   },
   {
     category: "Figure della Sicurezza",
     items: [
-      { name: "Corso Preposto", duration: "8 ore", validity: "2 anni", price: "120 EUR" },
-      { name: "Corso Dirigente", duration: "16 ore", validity: "5 anni", price: "200 EUR" },
-      { name: "Corso RLS", duration: "32 ore", validity: "1 anno", price: "350 EUR" },
-      { name: "Corso RSPP Datore di Lavoro (Basso)", duration: "16 ore", validity: "5 anni", price: "250 EUR" },
-      { name: "Corso RSPP Datore di Lavoro (Medio)", duration: "32 ore", validity: "5 anni", price: "400 EUR" },
-      { name: "Corso RSPP Datore di Lavoro (Alto)", duration: "48 ore", validity: "5 anni", price: "550 EUR" },
+      { name: "Corso Preposto", duration: "8 ore", validity: "2 anni" },
+      { name: "Corso Dirigente", duration: "16 ore", validity: "5 anni" },
+      { name: "Corso RLS", duration: "32 ore", validity: "1 anno" },
+      { name: "Corso RSPP Datore di Lavoro (Basso)", duration: "16 ore", validity: "5 anni" },
+      { name: "Corso RSPP Datore di Lavoro (Medio)", duration: "32 ore", validity: "5 anni" },
+      { name: "Corso RSPP Datore di Lavoro (Alto)", duration: "48 ore", validity: "5 anni" },
     ]
   },
   {
     category: "Emergenze",
     items: [
-      { name: "Addetto Antincendio Livello 1", duration: "4 ore", validity: "5 anni", price: "80 EUR" },
-      { name: "Addetto Antincendio Livello 2", duration: "8 ore", validity: "5 anni", price: "150 EUR" },
-      { name: "Addetto Antincendio Livello 3", duration: "16 ore", validity: "5 anni", price: "250 EUR" },
-      { name: "Addetto Primo Soccorso (Gruppo B-C)", duration: "12 ore", validity: "3 anni", price: "150 EUR" },
-      { name: "Addetto Primo Soccorso (Gruppo A)", duration: "16 ore", validity: "3 anni", price: "200 EUR" },
+      { name: "Addetto Antincendio Livello 1", duration: "4 ore", validity: "5 anni" },
+      { name: "Addetto Antincendio Livello 2", duration: "8 ore", validity: "5 anni" },
+      { name: "Addetto Antincendio Livello 3", duration: "16 ore", validity: "5 anni" },
+      { name: "Addetto Primo Soccorso (Gruppo B-C)", duration: "12 ore", validity: "3 anni" },
+      { name: "Addetto Primo Soccorso (Gruppo A)", duration: "16 ore", validity: "3 anni" },
     ]
   },
   {
     category: "Attrezzature di Lavoro",
     items: [
-      { name: "Carrelli Elevatori (Muletto)", duration: "12 ore", validity: "5 anni", price: "180 EUR" },
-      { name: "Piattaforme Elevabili (PLE)", duration: "10 ore", validity: "5 anni", price: "200 EUR" },
-      { name: "Gru su Autocarro", duration: "12 ore", validity: "5 anni", price: "250 EUR" },
-      { name: "Escavatori e Pale", duration: "16 ore", validity: "5 anni", price: "300 EUR" },
-      { name: "Lavori in Quota e DPI III Categoria", duration: "8 ore", validity: "5 anni", price: "180 EUR" },
+      { name: "Carrelli Elevatori (Muletto)", duration: "12 ore", validity: "5 anni" },
+      { name: "Piattaforme Elevabili (PLE)", duration: "10 ore", validity: "5 anni" },
+      { name: "Gru su Autocarro", duration: "12 ore", validity: "5 anni" },
+      { name: "Escavatori e Pale", duration: "16 ore", validity: "5 anni" },
+      { name: "Lavori in Quota e DPI III Categoria", duration: "8 ore", validity: "5 anni" },
     ]
   },
   {
     category: "Rischi Specifici",
     items: [
-      { name: "Rischio Elettrico (PES-PAV-PEI)", duration: "16 ore", validity: "5 anni", price: "250 EUR" },
-      { name: "Spazi Confinati", duration: "8 ore", validity: "5 anni", price: "200 EUR" },
-      { name: "Diisocianati (NCO)", duration: "4 ore", validity: "5 anni", price: "80 EUR" },
-      { name: "Amianto (Operatori)", duration: "30 ore", validity: "Permanente", price: "400 EUR" },
+      { name: "Rischio Elettrico (PES-PAV-PEI)", duration: "16 ore", validity: "5 anni" },
+      { name: "Spazi Confinati", duration: "8 ore", validity: "5 anni" },
+      { name: "Diisocianati (NCO)", duration: "4 ore", validity: "5 anni" },
+      { name: "Amianto (Operatori)", duration: "30 ore", validity: "Permanente" },
     ]
   },
 ];
@@ -196,7 +196,7 @@ export default function Formazione() {
       quickInfo={{
         duration: "Da 4 a 48 ore",
         validity: "Da 1 a 5 anni",
-        cost: "Da 50 EUR/corso + IVA",
+        cost: "Contattaci per un preventivo",
       }}
     >
       {/* Corsi Principali con Schede */}
@@ -285,7 +285,6 @@ export default function Formazione() {
                       <th className="text-left py-3 px-4 font-semibold">Corso</th>
                       <th className="text-left py-3 px-4 font-semibold">Durata</th>
                       <th className="text-left py-3 px-4 font-semibold">Validità</th>
-                      <th className="text-left py-3 px-4 font-semibold">Prezzo</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -294,7 +293,7 @@ export default function Formazione() {
                         <td className="py-3 px-4 font-medium">{course.name}</td>
                         <td className="py-3 px-4 text-muted-foreground">{course.duration}</td>
                         <td className="py-3 px-4 text-muted-foreground">{course.validity}</td>
-                        <td className="py-3 px-4 font-semibold text-primary">{course.price}</td>
+
                       </tr>
                     ))}
                   </tbody>

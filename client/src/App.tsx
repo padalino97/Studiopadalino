@@ -13,6 +13,7 @@ import Home from "./pages/Home";
 import SicurezzaLavoro from "./pages/services/SicurezzaLavoro";
 import MedicinaLavoro from "./pages/services/MedicinaLavoro";
 import Formazione from "./pages/services/Formazione";
+import FormazioneNew from "./pages/services/FormazioneNew";
 import AutorizzazioniSanitarie from "./pages/services/AutorizzazioniSanitarie";
 import QualitaISO from "./pages/services/QualitaISO";
 import PrivacyGDPR from "./pages/services/PrivacyGDPR";
@@ -48,7 +49,7 @@ function Router() {
       {/* Service Pages */}
       <Route path="/servizi/sicurezza-lavoro" component={SicurezzaLavoro} />
       <Route path="/servizi/medicina-lavoro" component={MedicinaLavoro} />
-      <Route path="/servizi/formazione" component={Formazione} />
+      <Route path="/servizi/formazione" component={FormazioneNew} />
       <Route path="/servizi/autorizzazioni-sanitarie" component={AutorizzazioniSanitarie} />
       <Route path="/servizi/qualita-iso" component={QualitaISO} />
       <Route path="/servizi/haccp" component={HACCPCoursePage} />

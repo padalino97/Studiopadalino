@@ -58,7 +58,7 @@ export default function SicurezzaCantieri() {
       quickInfo={{
         duration: "PSC in 10-15 giorni",
         validity: "Durata del cantiere",
-        cost: "Da €500 + IVA",
+        cost: "Contattaci per un preventivo",
       }}
     >
       {/* Cos'è Section */}
@@ -251,37 +251,37 @@ export default function SicurezzaCantieri() {
               <thead>
                 <tr className="border-b">
                   <th className="text-left py-3 font-semibold">Servizio</th>
-                  <th className="text-left py-3 font-semibold">Costo indicativo</th>
+                  <th className="text-left py-3 font-semibold"></th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="border-b">
                   <td className="py-3">CSP (cantiere semplice)</td>
-                  <td className="py-3">Da €500 + IVA</td>
+                  <td className="py-3">Contattaci per un preventivo</td>
                 </tr>
                 <tr className="border-b">
                   <td className="py-3">CSP (cantiere complesso)</td>
-                  <td className="py-3">Da €1.500 + IVA</td>
+                  <td className="py-3">Contattaci per un preventivo</td>
                 </tr>
                 <tr className="border-b">
                   <td className="py-3">CSE (canone mensile)</td>
-                  <td className="py-3">Da €300/mese + IVA</td>
+                  <td className="py-3">Contattaci per un preventivo</td>
                 </tr>
                 <tr className="border-b">
                   <td className="py-3">CSP + CSE (pacchetto)</td>
-                  <td className="py-3">Da €800 + IVA</td>
+                  <td className="py-3">Contattaci per un preventivo</td>
                 </tr>
                 <tr className="border-b">
                   <td className="py-3">POS (per impresa)</td>
-                  <td className="py-3">Da €200 + IVA</td>
+                  <td className="py-3">Contattaci per un preventivo</td>
                 </tr>
                 <tr className="border-b">
                   <td className="py-3">PIMUS</td>
-                  <td className="py-3">Da €150 + IVA</td>
+                  <td className="py-3">Contattaci per un preventivo</td>
                 </tr>
                 <tr>
                   <td className="py-3">Sopralluogo singolo</td>
-                  <td className="py-3">Da €100 + IVA</td>
+                  <td className="py-3">Contattaci per un preventivo</td>
                 </tr>
               </tbody>
             </table>
