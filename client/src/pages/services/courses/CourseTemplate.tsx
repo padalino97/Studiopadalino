@@ -14,6 +14,7 @@ interface CourseTemplateProps {
   type: "online" | "presenza";
   location?: string;
   description: string;
+  targetAudience?: string;
   objectives: string[];
   contents: string[];
   requirements: string[];
@@ -27,6 +28,7 @@ export function CourseTemplate({
   type,
   location,
   description,
+  targetAudience,
   objectives,
   contents,
   requirements,
@@ -87,6 +89,14 @@ export function CourseTemplate({
                 <h2 className="text-2xl font-bold text-foreground mb-4">Cos'è il corso</h2>
                 <p className="text-muted-foreground leading-relaxed">{description}</p>
               </div>
+
+              {/* A Chi È Rivolto */}
+              {targetAudience && (
+                <div className="mb-12 bg-blue-50 border-l-4 border-blue-600 p-6 rounded-lg">
+                  <h2 className="text-2xl font-bold text-blue-900 mb-4">A Chi È Rivolto</h2>
+                  <p className="text-gray-700 leading-relaxed">{targetAudience}</p>
+                </div>
+              )}
 
               {/* Obiettivi */}
               <div className="mb-12">

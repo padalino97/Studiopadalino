@@ -9,10 +9,12 @@ export default function Preposti() {
       type="presenza"
       location="Catania"
       description="Corso Corso per Preposti. I contenuti dettagliati saranno aggiunti a breve."
+      targetAudience="Preposti, capi squadra, responsabili di cantiere e supervisori che necessitano di formazione sulla gestione della sicurezza e applicazione delle normative D.Lgs 81/08."
       objectives={[
-        "Obiettivo 1 - Da definire",
-        "Obiettivo 2 - Da definire",
-        "Obiettivo 3 - Da definire",
+        "Acquisire competenze sulla gestione della sicurezza",
+        "Identificazione e valutazione dei rischi",
+        "Comunicazione efficace con i lavoratori",
+        "Applicazione delle normative D.Lgs 81/08",
       ]}
       contents={[
         "Argomento 1 - Da definire",
