@@ -11,8 +11,8 @@ export default function FormazioneComplete() {
       icon: Users,
       courses: [
         { title: "Corso per Preposti", duration: "12 ore", url: "/formazione/preposti" },
-        { title: "Corso per Datori di Lavoro", duration: "16 ore", url: "/formazione/datori-lavoro" },
-        { title: "Corso RLS", duration: "32 ore", url: "/formazione/rls" },
+        { title: "Corso per Datori di Lavoro", duration: "16 ore", url: "/servizi/formazione/datori-di-lavoro" },
+        { title: "Corso RLS", duration: "32 ore", url: "/servizi/formazione/rls" },
         { title: "Corso Aggiornamento Preposti", duration: "6 ore", url: "/formazione/aggiornamento-preposti" },
         { title: "Corso per Datori di Lavoro con Modulo Cantieri", duration: "32 ore", url: "/formazione/datori-lavoro-cantieri" },
         { title: "Corso Aggiornamento RLS (1-50 dipendenti)", duration: "4 ore", url: "/formazione/aggiornamento-rls-piccole" },
