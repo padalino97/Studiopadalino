@@ -50,7 +50,7 @@ import PrepostiPresenza from "./pages/services/courses/PrepostiPresenza";
 import CarrelliElevatori from "./pages/services/courses/CarrelliElevatori";
 
 // All 44 Course Pages
-import Preposti from "./pages/services/courses/Preposti";
+import PrepostiNew from "@/pages/services/courses/PrepostiNew";
 import DatoriLavoro from "./pages/services/courses/DatoriLavoro";
 import RLS from "./pages/services/courses/RLS";
 import AggiornamentoPreposti from "./pages/services/courses/AggiornamentoPreposti";
@@ -112,7 +112,7 @@ function Router() {
       {/* Course Pages - Old */}
       <Route path="/servizi/formazione/rspp" component={RSPPCourse} />
       <Route path="/servizi/formazione/lavoratori" component={LavoratoriCourse} />
-      <Route path="/servizi/formazione/preposti" component={PrepostiCourse} />
+      <Route path="/servizi/formazione/preposti" component={PrepostiNew} />
       <Route path="/servizi/formazione/antincendio" component={AntincendioCourse} />
       <Route path="/servizi/formazione/primo-soccorso" component={PrimoSoccorsoCourse} />
       <Route path="/servizi/formazione/rls" component={RLSCourse} />
@@ -136,7 +136,7 @@ function Router() {
       <Route path="/formazione/carrelli-elevatori" component={CarrelliElevatori} />
       
       {/* All 44 Course Routes */}
-      <Route path="/formazione/preposti" component={Preposti} />
+      <Route path="/formazione/preposti" component={PrepostiNew} />
       <Route path="/formazione/datori-lavoro" component={DatoriLavoro} />
       <Route path="/formazione/rls" component={RLS} />
       <Route path="/formazione/aggiornamento-preposti" component={AggiornamentoPreposti} />
