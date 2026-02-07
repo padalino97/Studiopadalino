@@ -51,6 +51,8 @@ import CarrelliElevatori from "./pages/services/courses/CarrelliElevatori";
 
 // All 44 Course Pages
 import PrepostiNew from "@/pages/services/courses/PrepostiNew";
+import DatoriLavoroNew from "@/pages/services/courses/DatoriLavoroNew";
+import RLSNew from "@/pages/services/courses/RLSNew";
 import DatoriLavoro from "./pages/services/courses/DatoriLavoro";
 import RLS from "./pages/services/courses/RLS";
 import AggiornamentoPreposti from "./pages/services/courses/AggiornamentoPreposti";
@@ -113,9 +115,10 @@ function Router() {
       <Route path="/servizi/formazione/rspp" component={RSPPCourse} />
       <Route path="/servizi/formazione/lavoratori" component={LavoratoriCourse} />
       <Route path="/servizi/formazione/preposti" component={PrepostiNew} />
+      <Route path="/servizi/formazione/datori-di-lavoro" component={DatoriLavoroNew} />
+      <Route path="/servizi/formazione/rls" component={RLSNew} />
       <Route path="/servizi/formazione/antincendio" component={AntincendioCourse} />
       <Route path="/servizi/formazione/primo-soccorso" component={PrimoSoccorsoCourse} />
-      <Route path="/servizi/formazione/rls" component={RLSCourse} />
       <Route path="/servizi/formazione/dirigenti" component={DirigentiCourse} />
       <Route path="/servizi/formazione/haccp" component={HACCPCoursePage} />
       
