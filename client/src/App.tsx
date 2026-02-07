@@ -53,6 +53,13 @@ import CarrelliElevatori from "./pages/services/courses/CarrelliElevatori";
 import PrepostiNew from "@/pages/services/courses/PrepostiNew";
 import DatoriLavoroNew from "@/pages/services/courses/DatoriLavoroNew";
 import RLSNew from "@/pages/services/courses/RLSNew";
+import PrimoSoccorsoBCNew from "@/pages/services/courses/PrimoSoccorsoBCNew";
+import AggiornamentoPrepostiNew from "@/pages/services/courses/AggiornamentoPrepostiNew";
+import DatoriLavoroCantieriNew from "@/pages/services/courses/DatoriLavoroCantieriNew";
+import AggiornamentoRLSPiccoleNew from "@/pages/services/courses/AggiornamentoRLSPiccoleNew";
+import AntincendioLivello1New from "@/pages/services/courses/AntincendioLivello1New";
+import PrimoSoccorsoANew from "@/pages/services/courses/PrimoSoccorsoANew";
+import AggiornamentoRLSGrandiNew from "@/pages/services/courses/AggiornamentoRLSGrandiNew";
 import DatoriLavoro from "./pages/services/courses/DatoriLavoro";
 import RLS from "./pages/services/courses/RLS";
 import AggiornamentoPreposti from "./pages/services/courses/AggiornamentoPreposti";
@@ -117,6 +124,13 @@ function Router() {
       <Route path="/servizi/formazione/preposti" component={PrepostiNew} />
       <Route path="/servizi/formazione/datori-di-lavoro" component={DatoriLavoroNew} />
       <Route path="/servizi/formazione/rls" component={RLSNew} />
+      <Route path="/servizi/formazione/primo-soccorso-bc" component={PrimoSoccorsoBCNew} />
+      <Route path="/servizi/formazione/aggiornamento-preposti" component={AggiornamentoPrepostiNew} />
+      <Route path="/servizi/formazione/datori-lavoro-cantieri" component={DatoriLavoroCantieriNew} />
+      <Route path="/servizi/formazione/aggiornamento-rls-piccole" component={AggiornamentoRLSPiccoleNew} />
+      <Route path="/servizi/formazione/antincendio-livello-1" component={AntincendioLivello1New} />
+      <Route path="/servizi/formazione/primo-soccorso-a" component={PrimoSoccorsoANew} />
+      <Route path="/servizi/formazione/aggiornamento-rls-grandi" component={AggiornamentoRLSGrandiNew} />
       <Route path="/servizi/formazione/antincendio" component={AntincendioCourse} />
       <Route path="/servizi/formazione/primo-soccorso" component={PrimoSoccorsoCourse} />
       <Route path="/servizi/formazione/dirigenti" component={DirigentiCourse} />
