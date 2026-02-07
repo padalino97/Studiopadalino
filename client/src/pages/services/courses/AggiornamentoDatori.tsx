@@ -1,14 +1,14 @@
 import { CourseTemplate } from "./CourseTemplate";
 
-export default function CarrelliElevatori() {
+export default function AggiornamentoDatori() {
   return (
     <CourseTemplate
-      title="Carrelli Elevatori"
+      title="Corso Aggiornamento per Datori di Lavoro"
       subtitle="Formazione professionale conforme al D.Lgs 81/08"
-      duration="12 ore"
-      type="presenza"
-      location="Catania"
-      description="Corso Carrelli Elevatori. I contenuti dettagliati saranno aggiunti a breve."
+      duration="8 ore"
+      type="online"
+      
+      description="Corso Corso Aggiornamento per Datori di Lavoro. I contenuti dettagliati saranno aggiunti a breve."
       objectives={[
         "Obiettivo 1 - Da definire",
         "Obiettivo 2 - Da definire",

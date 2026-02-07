@@ -14,6 +14,7 @@ import SicurezzaLavoro from "./pages/services/SicurezzaLavoro";
 import MedicinaLavoro from "./pages/services/MedicinaLavoro";
 import Formazione from "./pages/services/Formazione";
 import FormazioneNew from "./pages/services/FormazioneNew";
+import FormazioneComplete from "./pages/services/FormazioneComplete";
 import AutorizzazioniSanitarie from "./pages/services/AutorizzazioniSanitarie";
 import QualitaISO from "./pages/services/QualitaISO";
 import PrivacyGDPR from "./pages/services/PrivacyGDPR";
@@ -48,6 +49,51 @@ import PrimoSocorsoOnline from "./pages/services/courses/PrimoSocorsoOnline";
 import PrepostiPresenza from "./pages/services/courses/PrepostiPresenza";
 import CarrelliElevatori from "./pages/services/courses/CarrelliElevatori";
 
+// All 44 Course Pages
+import Preposti from "./pages/services/courses/Preposti";
+import DatoriLavoro from "./pages/services/courses/DatoriLavoro";
+import RLS from "./pages/services/courses/RLS";
+import AggiornamentoPreposti from "./pages/services/courses/AggiornamentoPreposti";
+import DatoriLavoroCantieri from "./pages/services/courses/DatoriLavoroCantieri";
+import AggiornamentoRLSPiccole from "./pages/services/courses/AggiornamentoRLSPiccole";
+import DatoriLavoroModuloCantieri from "./pages/services/courses/DatoriLavoroModuloCantieri";
+import AggiornamentoRLSGrandi from "./pages/services/courses/AggiornamentoRLSGrandi";
+import RSPPModuloComune from "./pages/services/courses/RSPPModuloComune";
+import RSPPModuloIntegrativo from "./pages/services/courses/RSPPModuloIntegrativo";
+import RSPPModuloCantieri from "./pages/services/courses/RSPPModuloCantieri";
+import Dirigenti from "./pages/services/courses/Dirigenti";
+import DirigentiCantieri from "./pages/services/courses/DirigentiCantieri";
+import DirigentiModuloCantieri from "./pages/services/courses/DirigentiModuloCantieri";
+import AggiornamentoDatori from "./pages/services/courses/AggiornamentoDatori";
+import AggiornamentoDirigenti from "./pages/services/courses/AggiornamentoDirigenti";
+import LavoratoriGenerale from "./pages/services/courses/LavoratoriGenerale";
+import LavoratoriRischioBasso from "./pages/services/courses/LavoratoriRischioBasso";
+import LavoratoriRischioMedio from "./pages/services/courses/LavoratoriRischioMedio";
+import LavoratoriRischioAlto from "./pages/services/courses/LavoratoriRischioAlto";
+import LavoratoriSpecificaBasso from "./pages/services/courses/LavoratoriSpecificaBasso";
+import LavoratoriFormazioneBasso from "./pages/services/courses/LavoratoriFormazioneBasso";
+import LavoratoriSpecificaAlto from "./pages/services/courses/LavoratoriSpecificaAlto";
+import AggiornamentoLavoratori from "./pages/services/courses/AggiornamentoLavoratori";
+import LavoratoriEnglish from "./pages/services/courses/LavoratoriEnglish";
+import PrimoSoccorsoBC from "./pages/services/courses/PrimoSoccorsoBC";
+import PrimoSoccorsoA from "./pages/services/courses/PrimoSoccorsoA";
+import AggiornamentoPrimoSoccorsoA from "./pages/services/courses/AggiornamentoPrimoSoccorsoA";
+import AggiornamentoPrimoSoccorsoBC from "./pages/services/courses/AggiornamentoPrimoSoccorsoBC";
+import AntincendioLivello1 from "./pages/services/courses/AntincendioLivello1";
+import AntincendioLivello2 from "./pages/services/courses/AntincendioLivello2";
+import AggiornamentoAntincendio1 from "./pages/services/courses/AggiornamentoAntincendio1";
+import AggiornamentoAntincendio2 from "./pages/services/courses/AggiornamentoAntincendio2";
+import BLSDDefibrillatore from "./pages/services/courses/BLSDDefibrillatore";
+import PLE from "./pages/services/courses/PLE";
+import PonteggiTrabattelli from "./pages/services/courses/PonteggiTrabattelli";
+import DPIFuni from "./pages/services/courses/DPIFuni";
+import AmbientiConfinati from "./pages/services/courses/AmbientiConfinati";
+import PESPAV from "./pages/services/courses/PESPAV";
+import GruCarroponte from "./pages/services/courses/GruCarroponte";
+import LavoriStradali from "./pages/services/courses/LavoriStradali";
+import MovimentoTerra from "./pages/services/courses/MovimentoTerra";
+import Trattori from "./pages/services/courses/Trattori";
+
 function Router() {
   return (
     <Switch>
@@ -56,7 +102,7 @@ function Router() {
       {/* Service Pages */}
       <Route path="/servizi/sicurezza-lavoro" component={SicurezzaLavoro} />
       <Route path="/servizi/medicina-lavoro" component={MedicinaLavoro} />
-      <Route path="/servizi/formazione" component={FormazioneNew} />
+      <Route path="/servizi/formazione" component={FormazioneComplete} />
       <Route path="/servizi/autorizzazioni-sanitarie" component={AutorizzazioniSanitarie} />
       <Route path="/servizi/qualita-iso" component={QualitaISO} />
       <Route path="/servizi/haccp" component={HACCPCoursePage} />
@@ -88,6 +134,51 @@ function Router() {
       {/* New Presence Courses */}
       <Route path="/formazione/preposti-presenza" component={PrepostiPresenza} />
       <Route path="/formazione/carrelli-elevatori" component={CarrelliElevatori} />
+      
+      {/* All 44 Course Routes */}
+      <Route path="/formazione/preposti" component={Preposti} />
+      <Route path="/formazione/datori-lavoro" component={DatoriLavoro} />
+      <Route path="/formazione/rls" component={RLS} />
+      <Route path="/formazione/aggiornamento-preposti" component={AggiornamentoPreposti} />
+      <Route path="/formazione/datori-lavoro-cantieri" component={DatoriLavoroCantieri} />
+      <Route path="/formazione/aggiornamento-rls-piccole" component={AggiornamentoRLSPiccole} />
+      <Route path="/formazione/datori-lavoro-modulo-cantieri" component={DatoriLavoroModuloCantieri} />
+      <Route path="/formazione/aggiornamento-rls-grandi" component={AggiornamentoRLSGrandi} />
+      <Route path="/formazione/rspp-modulo-comune" component={RSPPModuloComune} />
+      <Route path="/formazione/rspp-modulo-integrativo" component={RSPPModuloIntegrativo} />
+      <Route path="/formazione/rspp-modulo-cantieri" component={RSPPModuloCantieri} />
+      <Route path="/formazione/dirigenti" component={Dirigenti} />
+      <Route path="/formazione/dirigenti-cantieri" component={DirigentiCantieri} />
+      <Route path="/formazione/dirigenti-modulo-cantieri" component={DirigentiModuloCantieri} />
+      <Route path="/formazione/aggiornamento-datori" component={AggiornamentoDatori} />
+      <Route path="/formazione/aggiornamento-dirigenti" component={AggiornamentoDirigenti} />
+      <Route path="/formazione/lavoratori-generale" component={LavoratoriGenerale} />
+      <Route path="/formazione/lavoratori-rischio-basso" component={LavoratoriRischioBasso} />
+      <Route path="/formazione/lavoratori-rischio-medio" component={LavoratoriRischioMedio} />
+      <Route path="/formazione/lavoratori-rischio-alto" component={LavoratoriRischioAlto} />
+      <Route path="/formazione/lavoratori-specifica-basso" component={LavoratoriSpecificaBasso} />
+      <Route path="/formazione/lavoratori-formazione-basso" component={LavoratoriFormazioneBasso} />
+      <Route path="/formazione/lavoratori-specifica-alto" component={LavoratoriSpecificaAlto} />
+      <Route path="/formazione/aggiornamento-lavoratori" component={AggiornamentoLavoratori} />
+      <Route path="/formazione/lavoratori-english" component={LavoratoriEnglish} />
+      <Route path="/formazione/primo-soccorso-bc" component={PrimoSoccorsoBC} />
+      <Route path="/formazione/primo-soccorso-a" component={PrimoSoccorsoA} />
+      <Route path="/formazione/aggiornamento-primo-soccorso-a" component={AggiornamentoPrimoSoccorsoA} />
+      <Route path="/formazione/aggiornamento-primo-soccorso-bc" component={AggiornamentoPrimoSoccorsoBC} />
+      <Route path="/formazione/antincendio-livello-1" component={AntincendioLivello1} />
+      <Route path="/formazione/antincendio-livello-2" component={AntincendioLivello2} />
+      <Route path="/formazione/aggiornamento-antincendio-1" component={AggiornamentoAntincendio1} />
+      <Route path="/formazione/aggiornamento-antincendio-2" component={AggiornamentoAntincendio2} />
+      <Route path="/formazione/blsd-defibrillatore" component={BLSDDefibrillatore} />
+      <Route path="/formazione/ple" component={PLE} />
+      <Route path="/formazione/ponteggi-trabattelli" component={PonteggiTrabattelli} />
+      <Route path="/formazione/dpi-funi" component={DPIFuni} />
+      <Route path="/formazione/ambienti-confinati" component={AmbientiConfinati} />
+      <Route path="/formazione/pes-pav" component={PESPAV} />
+      <Route path="/formazione/gru-carroponte" component={GruCarroponte} />
+      <Route path="/formazione/lavori-stradali" component={LavoriStradali} />
+      <Route path="/formazione/movimento-terra" component={MovimentoTerra} />
+      <Route path="/formazione/trattori" component={Trattori} />
       
       {/* Blog Pages */}
       <Route path="/blog" component={Blog} />

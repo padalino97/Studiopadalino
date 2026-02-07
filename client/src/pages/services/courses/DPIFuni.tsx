@@ -1,14 +1,14 @@
 import { CourseTemplate } from "./CourseTemplate";
 
-export default function CarrelliElevatori() {
+export default function DPIFuni() {
   return (
     <CourseTemplate
-      title="Carrelli Elevatori"
+      title="DPI e Funi"
       subtitle="Formazione professionale conforme al D.Lgs 81/08"
-      duration="12 ore"
+      duration="8 ore"
       type="presenza"
       location="Catania"
-      description="Corso Carrelli Elevatori. I contenuti dettagliati saranno aggiunti a breve."
+      description="Corso DPI e Funi. I contenuti dettagliati saranno aggiunti a breve."
       objectives={[
         "Obiettivo 1 - Da definire",
         "Obiettivo 2 - Da definire",

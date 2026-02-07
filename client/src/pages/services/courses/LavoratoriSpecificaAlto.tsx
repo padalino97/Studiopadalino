@@ -1,14 +1,14 @@
 import { CourseTemplate } from "./CourseTemplate";
 
-export default function CarrelliElevatori() {
+export default function LavoratoriSpecificaAlto() {
   return (
     <CourseTemplate
-      title="Carrelli Elevatori"
+      title="Corso di Formazione Specifica per Lavoratori Rischio Alto"
       subtitle="Formazione professionale conforme al D.Lgs 81/08"
       duration="12 ore"
       type="presenza"
       location="Catania"
-      description="Corso Carrelli Elevatori. I contenuti dettagliati saranno aggiunti a breve."
+      description="Corso Corso di Formazione Specifica per Lavoratori Rischio Alto. I contenuti dettagliati saranno aggiunti a breve."
       objectives={[
         "Obiettivo 1 - Da definire",
         "Obiettivo 2 - Da definire",

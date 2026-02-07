@@ -1,14 +1,14 @@
 import { CourseTemplate } from "./CourseTemplate";
 
-export default function CarrelliElevatori() {
+export default function RSPPModuloCantieri() {
   return (
     <CourseTemplate
-      title="Carrelli Elevatori"
+      title="Corso per Datori di Lavoro RSPP - Modulo Aggiuntivo Cantieri"
       subtitle="Formazione professionale conforme al D.Lgs 81/08"
-      duration="12 ore"
+      duration="da 250,00 euro"
       type="presenza"
       location="Catania"
-      description="Corso Carrelli Elevatori. I contenuti dettagliati saranno aggiunti a breve."
+      description="Corso Corso per Datori di Lavoro RSPP - Modulo Aggiuntivo Cantieri. I contenuti dettagliati saranno aggiunti a breve."
       objectives={[
         "Obiettivo 1 - Da definire",
         "Obiettivo 2 - Da definire",
