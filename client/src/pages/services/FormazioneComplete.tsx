@@ -43,7 +43,7 @@ export default function FormazioneComplete() {
       courses: [
         { title: "Corso di Primo Soccorso (Aziende Gruppo B e C)", duration: "12 ore", url: "/servizi/formazione/primo-soccorso-bc" },
         { title: "Corso di Primo Soccorso (Aziende Gruppo A)", duration: "16 ore", url: "/servizi/formazione/primo-soccorso-a" },
-        { title: "Corso Aggiornamento Primo Soccorso (Aziende Gruppo A)", duration: "6 ore", url: "/formazione/aggiornamento-primo-soccorso-a" },
+        { title: "Corso Aggiornamento Primo Soccorso (Aziende Gruppo A)", duration: "6 ore", url: "/servizi/formazione/aggiornamento-primo-soccorso-a" },
         { title: "Corso Aggiornamento Primo Soccorso (Aziende Gruppo B e C)", duration: "4 ore", url: "/formazione/aggiornamento-primo-soccorso-bc" },
       ],
     },
@@ -52,7 +52,7 @@ export default function FormazioneComplete() {
       icon: Flame,
       courses: [
         { title: "Corso Antincendio Livello 1", duration: "4 ore", url: "/servizi/formazione/antincendio-livello-1" },
-        { title: "Corso Antincendio Livello 2", duration: "8 ore", url: "/formazione/antincendio-livello-2" },
+        { title: "Corso Antincendio Livello 2", duration: "8 ore", url: "/servizi/formazione/antincendio-livello-2" },
         { title: "Corso Aggiornamento Antincendio Livello 1", duration: "2 ore", url: "/formazione/aggiornamento-antincendio-1" },
         { title: "Corso Aggiornamento Antincendio Livello 2", duration: "5 ore", url: "/formazione/aggiornamento-antincendio-2" },
       ],

@@ -60,6 +60,8 @@ import AggiornamentoRLSPiccoleNew from "@/pages/services/courses/AggiornamentoRL
 import AntincendioLivello1New from "@/pages/services/courses/AntincendioLivello1New";
 import PrimoSoccorsoANew from "@/pages/services/courses/PrimoSoccorsoANew";
 import AggiornamentoRLSGrandiNew from "@/pages/services/courses/AggiornamentoRLSGrandiNew";
+import AntincendioLivello2New from "@/pages/services/courses/AntincendioLivello2New";
+import AggiornamentoPrimoSoccorsoANew from "@/pages/services/courses/AggiornamentoPrimoSoccorsoANew";
 import DatoriLavoro from "./pages/services/courses/DatoriLavoro";
 import RLS from "./pages/services/courses/RLS";
 import AggiornamentoPreposti from "./pages/services/courses/AggiornamentoPreposti";
@@ -131,6 +133,8 @@ function Router() {
       <Route path="/servizi/formazione/antincendio-livello-1" component={AntincendioLivello1New} />
       <Route path="/servizi/formazione/primo-soccorso-a" component={PrimoSoccorsoANew} />
       <Route path="/servizi/formazione/aggiornamento-rls-grandi" component={AggiornamentoRLSGrandiNew} />
+      <Route path="/servizi/formazione/antincendio-livello-2" component={AntincendioLivello2New} />
+      <Route path="/servizi/formazione/aggiornamento-primo-soccorso-a" component={AggiornamentoPrimoSoccorsoANew} />
       <Route path="/servizi/formazione/antincendio" component={AntincendioCourse} />
       <Route path="/servizi/formazione/primo-soccorso" component={PrimoSoccorsoCourse} />
       <Route path="/servizi/formazione/dirigenti" component={DirigentiCourse} />
