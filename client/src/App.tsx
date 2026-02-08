@@ -73,6 +73,8 @@ import DatoriRSPPAgricolturaNew from "@/pages/services/courses/DatoriRSPPAgricol
 import DatoriRSPPChimicoNew from "@/pages/services/courses/DatoriRSPPChimicoNew";
 import DatoriRSPPCostruzioniNew from "@/pages/services/courses/DatoriRSPPCostruzioniNew";
 import LavoratoriRischioBassoNew from "@/pages/services/courses/LavoratoriRischioBassoNew";
+import LavoratoriRischioMedioNew from "@/pages/services/courses/LavoratoriRischioMedioNew";
+import LavoratoriRischioAltoNew from "@/pages/services/courses/LavoratoriRischioAltoNew";
 import DatoriLavoro from "./pages/services/courses/DatoriLavoro";
 import RLS from "./pages/services/courses/RLS";
 import AggiornamentoPreposti from "./pages/services/courses/AggiornamentoPreposti";
@@ -157,6 +159,8 @@ function Router() {
       <Route path="/servizi/formazione/datori-rspp-chimico" component={DatoriRSPPChimicoNew} />
       <Route path="/servizi/formazione/datori-rspp-costruzioni" component={DatoriRSPPCostruzioniNew} />
       <Route path="/servizi/formazione/lavoratori-rischio-basso" component={LavoratoriRischioBassoNew} />
+      <Route path="/servizi/formazione/lavoratori-rischio-medio" component={LavoratoriRischioMedioNew} />
+      <Route path="/servizi/formazione/lavoratori-rischio-alto" component={LavoratoriRischioAltoNew} />
       <Route path="/servizi/formazione/antincendio" component={AntincendioCourse} />
       <Route path="/servizi/formazione/primo-soccorso" component={PrimoSoccorsoCourse} />
       <Route path="/servizi/formazione/haccp" component={HACCPCoursePage} />
