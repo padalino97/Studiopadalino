@@ -66,6 +66,12 @@ import AggiornamentoDatoriLavoroNew from "@/pages/services/courses/Aggiornamento
 import AggiornamentoAntincendioLivello1New from "@/pages/services/courses/AggiornamentoAntincendioLivello1New";
 import AggiornamentoPrimoSoccorsoBCNew from "@/pages/services/courses/AggiornamentoPrimoSoccorsoBCNew";
 import BLSDAENew from "@/pages/services/courses/BLSDAENew";
+import AggiornamentoAntincendioLivello2New from "@/pages/services/courses/AggiornamentoAntincendioLivello2New";
+import DatoriRSPPComuneNew from "@/pages/services/courses/DatoriRSPPComuneNew";
+import DirigentiNew from "@/pages/services/courses/DirigentiNew";
+import DatoriRSPPAgricolturaNew from "@/pages/services/courses/DatoriRSPPAgricolturaNew";
+import DatoriRSPPChimicoNew from "@/pages/services/courses/DatoriRSPPChimicoNew";
+import DatoriRSPPCostruzioniNew from "@/pages/services/courses/DatoriRSPPCostruzioniNew";
 import DatoriLavoro from "./pages/services/courses/DatoriLavoro";
 import RLS from "./pages/services/courses/RLS";
 import AggiornamentoPreposti from "./pages/services/courses/AggiornamentoPreposti";
@@ -143,9 +149,14 @@ function Router() {
       <Route path="/servizi/formazione/aggiornamento-antincendio-livello-1" component={AggiornamentoAntincendioLivello1New} />
       <Route path="/servizi/formazione/aggiornamento-primo-soccorso-bc" component={AggiornamentoPrimoSoccorsoBCNew} />
       <Route path="/servizi/formazione/blsd-dae" component={BLSDAENew} />
+      <Route path="/servizi/formazione/aggiornamento-antincendio-livello-2" component={AggiornamentoAntincendioLivello2New} />
+      <Route path="/servizi/formazione/datori-rspp-comune" component={DatoriRSPPComuneNew} />
+      <Route path="/servizi/formazione/dirigenti" component={DirigentiNew} />
+      <Route path="/servizi/formazione/datori-rspp-agricoltura" component={DatoriRSPPAgricolturaNew} />
+      <Route path="/servizi/formazione/datori-rspp-chimico" component={DatoriRSPPChimicoNew} />
+      <Route path="/servizi/formazione/datori-rspp-costruzioni" component={DatoriRSPPCostruzioniNew} />
       <Route path="/servizi/formazione/antincendio" component={AntincendioCourse} />
       <Route path="/servizi/formazione/primo-soccorso" component={PrimoSoccorsoCourse} />
-      <Route path="/servizi/formazione/dirigenti" component={DirigentiCourse} />
       <Route path="/servizi/formazione/haccp" component={HACCPCoursePage} />
       
       {/* New Online Courses */}
