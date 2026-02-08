@@ -24,7 +24,7 @@ export default function FormazioneComplete() {
         { title: "Corso per Dirigenti", duration: "12 ore", url: "/formazione/dirigenti" },
         { title: "Corso per Dirigenti con Modulo Aggiuntivo Cantieri", duration: "18 ore", url: "/formazione/dirigenti-cantieri" },
         { title: "Corso per Dirigenti - Modulo Aggiuntivo Cantieri", duration: "6 ore", url: "/formazione/dirigenti-modulo-cantieri" },
-        { title: "Corso Aggiornamento per Datori di Lavoro", duration: "8 ore", url: "/formazione/aggiornamento-datori" },
+        { title: "Corso Aggiornamento Datori di Lavoro", duration: "6 ore", url: "/servizi/formazione/aggiornamento-datori-lavoro" },
         { title: "Corso di Aggiornamento Dirigenti", duration: "6 ore", url: "/formazione/aggiornamento-dirigenti" },
         { title: "Corso Formazione Generale per Lavoratori", duration: "4 ore", url: "/formazione/lavoratori-generale" },
         { title: "Corso per Lavoratori Rischio Basso", duration: "8 ore", url: "/formazione/lavoratori-rischio-basso" },
@@ -44,7 +44,7 @@ export default function FormazioneComplete() {
         { title: "Corso di Primo Soccorso (Aziende Gruppo B e C)", duration: "12 ore", url: "/servizi/formazione/primo-soccorso-bc" },
         { title: "Corso di Primo Soccorso (Aziende Gruppo A)", duration: "16 ore", url: "/servizi/formazione/primo-soccorso-a" },
         { title: "Corso Aggiornamento Primo Soccorso (Aziende Gruppo A)", duration: "6 ore", url: "/servizi/formazione/aggiornamento-primo-soccorso-a" },
-        { title: "Corso Aggiornamento Primo Soccorso (Aziende Gruppo B e C)", duration: "4 ore", url: "/formazione/aggiornamento-primo-soccorso-bc" },
+        { title: "Corso Aggiornamento Primo Soccorso (Aziende Gruppo B e C)", duration: "4 ore", url: "/servizi/formazione/aggiornamento-primo-soccorso-bc" },
       ],
     },
     {
@@ -53,7 +53,7 @@ export default function FormazioneComplete() {
       courses: [
         { title: "Corso Antincendio Livello 1", duration: "4 ore", url: "/servizi/formazione/antincendio-livello-1" },
         { title: "Corso Antincendio Livello 2", duration: "8 ore", url: "/servizi/formazione/antincendio-livello-2" },
-        { title: "Corso Aggiornamento Antincendio Livello 1", duration: "2 ore", url: "/formazione/aggiornamento-antincendio-1" },
+        { title: "Corso Aggiornamento Antincendio Livello 1", duration: "2 ore", url: "/servizi/formazione/aggiornamento-antincendio-livello-1" },
         { title: "Corso Aggiornamento Antincendio Livello 2", duration: "5 ore", url: "/formazione/aggiornamento-antincendio-2" },
       ],
     },
@@ -61,7 +61,7 @@ export default function FormazioneComplete() {
       title: "Abilitazioni Speciali",
       icon: Award,
       courses: [
-        { title: "Corso di Abilitazione BLSD \"laico\" (Defibrillatore)", duration: "5 ore", url: "/formazione/blsd-defibrillatore" },
+        { title: "Corso di Abilitazione BLSD Laico (Defibrillatore DAE)", duration: "5 ore", url: "/servizi/formazione/blsd-dae" },
       ],
     },
     {
