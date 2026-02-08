@@ -122,6 +122,30 @@ import LavoriStradali from "./pages/services/courses/LavoriStradali";
 import MovimentoTerra from "./pages/services/courses/MovimentoTerra";
 import Trattori from "./pages/services/courses/Trattori";
 
+// Macchine e Attrezzature Courses
+import PiattaformeElevabiliNew from "@/pages/services/courses/PiattaformeElevabiliNew";
+import AggiornamentoPiattaformeElevabiliNew from "@/pages/services/courses/AggiornamentoPiattaformeElevabiliNew";
+import PonteggiNew from "@/pages/services/courses/PonteggiNew";
+import AggiornamentoPonteggiNew from "@/pages/services/courses/AggiornamentoPonteggiNew";
+import DPIAnticadutaNew from "@/pages/services/courses/DPIAnticadutaNew";
+import AggiornamentoDPIAnticadutaNew from "@/pages/services/courses/AggiornamentoDPIAnticadutaNew";
+import EscavatoriNew from "@/pages/services/courses/EscavatoriNew";
+import AggiornamentoEscavatoriNew from "@/pages/services/courses/AggiornamentoEscavatoriNew";
+import CarroponteNew from "@/pages/services/courses/CarroponteNew";
+import AggiornamentoCarroponteNew from "@/pages/services/courses/AggiornamentoCarroponteNew";
+import GruAutocarroNew from "@/pages/services/courses/GruAutocarroNew";
+import AggiornamentoGruAutocarroNew from "@/pages/services/courses/AggiornamentoGruAutocarroNew";
+import SegnaletcaStradaNew from "@/pages/services/courses/SegnaletcaStradaNew";
+import AggiornamentoSegnaleticaStradaNew from "@/pages/services/courses/AggiornamentoSegnaleticaStradaNew";
+import PrepostiStradaliNew from "@/pages/services/courses/PrepostiStradaliNew";
+import AggiornamentoPrepostiStradaliNew from "@/pages/services/courses/AggiornamentoPrepostiStradaliNew";
+import TattoriAgricoliNew from "@/pages/services/courses/TattoriAgricoliNew";
+import AggiornamentoTattoriAgricoliNew from "@/pages/services/courses/AggiornamentoTattoriAgricoliNew";
+import AmbientiSospettiNew from "@/pages/services/courses/AmbientiSospettiNew";
+import AggiornamentoAmbientiSospettiNew from "@/pages/services/courses/AggiornamentoAmbientiSospettiNew";
+import PESPAVNew from "@/pages/services/courses/PESPAVNew";
+import AggiornamentoPESPAVNew from "@/pages/services/courses/AggiornamentoPESPAVNew";
+
 function Router() {
   return (
     <Switch>
@@ -233,6 +257,30 @@ function Router() {
       <Route path="/formazione/lavori-stradali" component={LavoriStradali} />
       <Route path="/formazione/movimento-terra" component={MovimentoTerra} />
       <Route path="/formazione/trattori" component={Trattori} />
+      
+      {/* Macchine e Attrezzature Routes */}
+      <Route path="/servizi/formazione/piattaforme-elevabili" component={PiattaformeElevabiliNew} />
+      <Route path="/servizi/formazione/aggiornamento-piattaforme-elevabili" component={AggiornamentoPiattaformeElevabiliNew} />
+      <Route path="/servizi/formazione/ponteggi" component={PonteggiNew} />
+      <Route path="/servizi/formazione/aggiornamento-ponteggi" component={AggiornamentoPonteggiNew} />
+      <Route path="/servizi/formazione/dpi-anticaduta" component={DPIAnticadutaNew} />
+      <Route path="/servizi/formazione/aggiornamento-dpi-anticaduta" component={AggiornamentoDPIAnticadutaNew} />
+      <Route path="/servizi/formazione/escavatori" component={EscavatoriNew} />
+      <Route path="/servizi/formazione/aggiornamento-escavatori" component={AggiornamentoEscavatoriNew} />
+      <Route path="/servizi/formazione/carroponte" component={CarroponteNew} />
+      <Route path="/servizi/formazione/aggiornamento-carroponte" component={AggiornamentoCarroponteNew} />
+      <Route path="/servizi/formazione/gru-autocarro" component={GruAutocarroNew} />
+      <Route path="/servizi/formazione/aggiornamento-gru-autocarro" component={AggiornamentoGruAutocarroNew} />
+      <Route path="/servizi/formazione/segnaletica-strada" component={SegnaletcaStradaNew} />
+      <Route path="/servizi/formazione/aggiornamento-segnaletica-strada" component={AggiornamentoSegnaleticaStradaNew} />
+      <Route path="/servizi/formazione/preposti-stradali" component={PrepostiStradaliNew} />
+      <Route path="/servizi/formazione/aggiornamento-preposti-stradali" component={AggiornamentoPrepostiStradaliNew} />
+      <Route path="/servizi/formazione/trattori-agricoli" component={TattoriAgricoliNew} />
+      <Route path="/servizi/formazione/aggiornamento-trattori-agricoli" component={AggiornamentoTattoriAgricoliNew} />
+      <Route path="/servizi/formazione/ambienti-sospetti" component={AmbientiSospettiNew} />
+      <Route path="/servizi/formazione/aggiornamento-ambienti-sospetti" component={AggiornamentoAmbientiSospettiNew} />
+      <Route path="/servizi/formazione/pespav" component={PESPAVNew} />
+      <Route path="/servizi/formazione/aggiornamento-pespav" component={AggiornamentoPESPAVNew} />
       
       {/* Blog Pages */}
       <Route path="/blog" component={Blog} />
