@@ -149,17 +149,21 @@ export default function Header() {
               </Button>
             </Link>
 
-            <button onClick={() => handleNavClick("/#chi-siamo")}>
-              <Button variant="ghost" className="font-medium hover:bg-primary/10 hover:text-primary">
-                Chi Siamo
-              </Button>
-            </button>
+            <Button 
+              variant="ghost" 
+              className="font-medium hover:bg-primary/10 hover:text-primary"
+              onClick={() => handleNavClick("/#chi-siamo")}
+            >
+              Chi Siamo
+            </Button>
 
-            <button onClick={() => handleNavClick("/#contatti")}>
-              <Button variant="ghost" className="font-medium hover:bg-primary/10 hover:text-primary">
-                Contatti
-              </Button>
-            </button>
+            <Button 
+              variant="ghost" 
+              className="font-medium hover:bg-primary/10 hover:text-primary"
+              onClick={() => handleNavClick("/#contatti")}
+            >
+              Contatti
+            </Button>
           </nav>
 
           {/* CTA Buttons */}
