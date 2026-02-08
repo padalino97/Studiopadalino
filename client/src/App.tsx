@@ -97,7 +97,9 @@ import LavoratoriRischioAlto from "./pages/services/courses/LavoratoriRischioAlt
 import LavoratoriSpecificaBasso from "./pages/services/courses/LavoratoriSpecificaBasso";
 import LavoratoriFormazioneBasso from "./pages/services/courses/LavoratoriFormazioneBasso";
 import LavoratoriSpecificaAlto from "./pages/services/courses/LavoratoriSpecificaAlto";
-import AggiornamentoLavoratori from "./pages/services/courses/AggiornamentoLavoratori";
+import AggiornamentoLavoratoriNew from "@/pages/services/courses/AggiornamentoLavoratoriNew";
+import DirigentiCantieriNew from "@/pages/services/courses/DirigentiCantieriNew";
+import ModuloCantieriDirigentiNew from "@/pages/services/courses/ModuloCantieriDirigentiNew";
 import LavoratoriEnglish from "./pages/services/courses/LavoratoriEnglish";
 import PrimoSoccorsoBC from "./pages/services/courses/PrimoSoccorsoBC";
 import PrimoSoccorsoA from "./pages/services/courses/PrimoSoccorsoA";
@@ -205,7 +207,9 @@ function Router() {
       <Route path="/formazione/lavoratori-specifica-basso" component={LavoratoriSpecificaBasso} />
       <Route path="/formazione/lavoratori-formazione-basso" component={LavoratoriFormazioneBasso} />
       <Route path="/formazione/lavoratori-specifica-alto" component={LavoratoriSpecificaAlto} />
-      <Route path="/formazione/aggiornamento-lavoratori" component={AggiornamentoLavoratori} />
+      <Route path="/servizi/formazione/aggiornamento-lavoratori" component={AggiornamentoLavoratoriNew} />
+      <Route path="/servizi/formazione/dirigenti-cantieri" component={DirigentiCantieriNew} />
+      <Route path="/servizi/formazione/modulo-cantieri-dirigenti" component={ModuloCantieriDirigentiNew} />
       <Route path="/formazione/lavoratori-english" component={LavoratoriEnglish} />
       <Route path="/formazione/primo-soccorso-bc" component={PrimoSoccorsoBC} />
       <Route path="/formazione/primo-soccorso-a" component={PrimoSoccorsoA} />
