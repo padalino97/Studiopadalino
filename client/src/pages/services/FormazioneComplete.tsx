@@ -8,7 +8,6 @@ import { useState, useMemo } from "react";
 export default function FormazioneComplete() {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [selectedDuration, setSelectedDuration] = useState("all");
-  const [selectedLevel, setSelectedLevel] = useState("all");
   const [searchTerm, setSearchTerm] = useState("");
 
   const categories = [
@@ -110,21 +109,19 @@ export default function FormazioneComplete() {
     return allCourses.filter(course => {
       const categoryMatch = selectedCategory === "all" || course.category === selectedCategory;
       const durationMatch = selectedDuration === "all" || course.duration.includes(selectedDuration);
-      const levelMatch = selectedLevel === "all" || course.level === selectedLevel;
       const searchMatch = course.title.toLowerCase().includes(searchTerm.toLowerCase());
       
-      return categoryMatch && durationMatch && levelMatch && searchMatch;
+      return categoryMatch && durationMatch && searchMatch;
     });
-  }, [selectedCategory, selectedDuration, selectedLevel, searchTerm]);
+  }, [selectedCategory, selectedDuration, searchTerm]);
 
   const resetFilters = () => {
     setSelectedCategory("all");
     setSelectedDuration("all");
-    setSelectedLevel("all");
     setSearchTerm("");
   };
 
-  const hasActiveFilters = selectedCategory !== "all" || selectedDuration !== "all" || selectedLevel !== "all" || searchTerm !== "";
+  const hasActiveFilters = selectedCategory !== "all" || selectedDuration !== "all" || searchTerm !== "";
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
@@ -181,7 +178,7 @@ export default function FormazioneComplete() {
               <h2 className="text-2xl font-bold text-foreground">Filtra i Corsi</h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
               {/* Search */}
               <div>
                 <label className="block text-sm font-semibold text-foreground mb-2">Cerca Corso</label>
@@ -226,21 +223,6 @@ export default function FormazioneComplete() {
                   <option value="32 ore">32+ ore</option>
                 </select>
               </div>
-
-              {/* Level Filter */}
-              <div>
-                <label className="block text-sm font-semibold text-foreground mb-2">Livello</label>
-                <select
-                  value={selectedLevel}
-                  onChange={(e) => setSelectedLevel(e.target.value)}
-                  className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                >
-                  <option value="all">Tutti i Livelli</option>
-                  <option value="base">Base</option>
-                  <option value="intermedio">Intermedio</option>
-                  <option value="avanzato">Avanzato</option>
-                </select>
-              </div>
             </div>
 
             {/* Reset Filters Button */}
@@ -269,16 +251,9 @@ export default function FormazioneComplete() {
                 {filteredCourses.map((course, idx) => (
                   <Link key={idx} href={course.url}>
                     <div className="bg-white border border-border rounded-xl p-6 hover:shadow-lg transition-shadow cursor-pointer group h-full">
-                      <div className="flex items-start justify-between mb-3">
-                        <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-blue-600 transition-colors flex-1">
-                          {course.title}
-                        </h3>
-                        <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-blue-100 text-blue-700 whitespace-nowrap ml-2">
-                          {course.level === "base" && "Base"}
-                          {course.level === "intermedio" && "Intermedio"}
-                          {course.level === "avanzato" && "Avanzato"}
-                        </span>
-                      </div>
+                      <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-blue-600 transition-colors">
+                        {course.title}
+                      </h3>
                       <p className="text-xs text-muted-foreground mb-3">{course.category}</p>
                       <div className="flex items-center gap-2 text-muted-foreground text-sm">
                         <Clock className="w-4 h-4" />
