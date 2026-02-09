@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { CheckCircle, Clock, Award, AlertCircle, MessageCircle, Briefcase, RefreshCw, Users } from "lucide-react";
 
-export default function CarrelliElevatori() {
+export default function AggiornamentoCarrelliElevatori() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
@@ -18,7 +18,7 @@ export default function CarrelliElevatori() {
               <span>/</span>
               <a href="/servizi/formazione" className="hover:text-foreground transition-colors">Macchine e Attrezzature</a>
               <span>/</span>
-              <span className="text-foreground font-medium">Carrelli Elevatori</span>
+              <span className="text-foreground font-medium">Aggiornamento Carrelli Elevatori</span>
             </div>
           </div>
         </section>
@@ -29,59 +29,59 @@ export default function CarrelliElevatori() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               {/* Immagine */}
               <div className="relative">
-                <div className="absolute -top-4 -left-4 bg-blue-600 text-white px-4 py-2 rounded-full font-bold text-sm z-10 transform -rotate-12">
-                  PRATICA OBBLIGATORIA
+                <div className="absolute -top-4 -left-4 bg-orange-600 text-white px-4 py-2 rounded-full font-bold text-sm z-10 transform -rotate-12">
+                  AGGIORNAMENTO
                 </div>
                 <img 
                   src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&h=400&fit=crop" 
-                  alt="Carrelli Elevatori" 
+                  alt="Aggiornamento Carrelli Elevatori" 
                   className="w-full h-auto rounded-lg shadow-lg"
                 />
               </div>
 
               {/* Contenuto */}
               <div>
-                <h1 className="text-4xl font-bold text-foreground mb-4">Corso per Addetti alla Conduzione di Carrelli Elevatori</h1>
+                <h1 className="text-4xl font-bold text-foreground mb-4">Corso di Aggiornamento per Addetti alla Conduzione di Carrelli Elevatori</h1>
                 <p className="text-lg text-muted-foreground mb-2">
-                  <strong>Formazione Teorica + Pratica</strong>
+                  <strong>Aggiornamento Quinquennale</strong>
                 </p>
                 <p className="text-lg text-muted-foreground mb-6">
-                  Durata <strong>12 ore</strong> (4 ore teoriche + 8 ore pratiche)
+                  Durata <strong>4 ore</strong> (1 ora giuridico-normativa + 3 ore pratiche)
                 </p>
 
                 {/* Info Cards */}
                 <div className="space-y-4 mb-8">
-                  <div className="flex items-start gap-3 bg-blue-50 p-4 rounded-lg">
-                    <Clock className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-3 bg-orange-50 p-4 rounded-lg">
+                    <Clock className="w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="font-semibold text-foreground">Durata Totale</p>
-                      <p className="text-sm text-muted-foreground">12 ore (4 teoriche + 8 pratiche)</p>
+                      <p className="text-sm text-muted-foreground">4 ore (1 giuridico-normativa + 3 pratiche)</p>
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-3 bg-emerald-50 p-4 rounded-lg">
-                    <Users className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-3 bg-amber-50 p-4 rounded-lg">
+                    <Users className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="font-semibold text-foreground">Target</p>
-                      <p className="text-sm text-muted-foreground">Operatori di carrelli elevatori in magazzini, cantieri e stabilimenti</p>
+                      <p className="text-sm text-muted-foreground">Operatori con certificazione scaduta o in scadenza</p>
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-3 bg-teal-50 p-4 rounded-lg">
-                    <RefreshCw className="w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-3 bg-yellow-50 p-4 rounded-lg">
+                    <RefreshCw className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-semibold text-foreground">Validità</p>
-                      <p className="text-sm text-muted-foreground">Aggiornamento quinquennale (4 ore)</p>
+                      <p className="font-semibold text-foreground">Periodicità</p>
+                      <p className="text-sm text-muted-foreground">Aggiornamento quinquennale obbligatorio</p>
                     </div>
                   </div>
                 </div>
 
                 {/* CTA Button */}
                 <a
-                  href="https://wa.me/393465835685?text=Sono%20interessato%20al%20Corso%20Carrelli%20Elevatori"
+                  href="https://wa.me/393465835685?text=Sono%20interessato%20al%20Corso%20Aggiornamento%20Carrelli%20Elevatori"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-bold transition-colors"
+                  className="inline-flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-lg font-bold transition-colors"
                 >
                   <MessageCircle className="w-5 h-5" />
                   Contattaci su WhatsApp
@@ -107,10 +107,10 @@ export default function CarrelliElevatori() {
               </div>
 
               {/* A Chi È Rivolto */}
-              <div className="mb-12 pb-12 border-b border-gray-200 bg-blue-50 border-l-4 border-blue-600 p-6 rounded-lg">
-                <h2 className="text-3xl font-bold text-blue-900 mb-6">A Chi È Rivolto</h2>
+              <div className="mb-12 pb-12 border-b border-gray-200 bg-orange-50 border-l-4 border-orange-600 p-6 rounded-lg">
+                <h2 className="text-3xl font-bold text-orange-900 mb-6">A Chi È Rivolto</h2>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Il corso è rivolto a <strong>tutti coloro che</strong>, all'interno dell'organizzazione aziendale – inclusi il datore di lavoro e i soggetti di cui all'art. 21 del D.lgs. 81/08 – <strong>utilizzano il carrello elevatore per la movimentazione delle merci</strong>. Il percorso formativo abilita all'uso dei carrelli elevatori per svolgere in sicurezza le mansioni legate alla movimentazione, mediante carrelli industriali semoventi: veicoli progettati per spostare, impilare o sistemare su scaffalature qualsiasi tipo di carico, azionati da un operatore a bordo su sedile.
+                  Il corso di aggiornamento è rivolto a <strong>tutti coloro che</strong>, all'interno dell'organizzazione aziendale – inclusi il datore di lavoro e i soggetti di cui all'art. 21 del D.lgs. 81/08 – <strong>utilizzano il carrello elevatore per la movimentazione delle merci</strong> e necessitano di aggiornare la loro certificazione secondo la periodicità quinquennale prevista dalla normativa.
                 </p>
               </div>
 
@@ -134,36 +134,36 @@ export default function CarrelliElevatori() {
               <div className="mb-12 pb-12 border-b border-gray-200">
                 <h2 className="text-3xl font-bold text-foreground mb-6">Programma</h2>
                 
-                {/* Modulo 1 - Teorico */}
-                <div className="mb-8 bg-blue-50 border-l-4 border-blue-600 p-6 rounded-lg">
-                  <h3 className="text-2xl font-bold text-blue-900 mb-4">MODULO TEORICO – TECNICO (4 ORE)</h3>
+                {/* Modulo 1 - Giuridico Normativo */}
+                <div className="mb-8 bg-orange-50 border-l-4 border-orange-600 p-6 rounded-lg">
+                  <h3 className="text-2xl font-bold text-orange-900 mb-4">MODULO GIURIDICO NORMATIVO (1 ORA)</h3>
                   <div className="space-y-3">
                     <div className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-700">Illustrare le categorie e le caratteristiche delle attrezzature di lavoro</span>
+                      <CheckCircle className="w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Cenni di normativa generale in materia di igiene e sicurezza del lavoro</span>
                     </div>
                     <div className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-700">Illustrare i componenti e i dispositivi di comando e di sicurezza</span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-700">Illustrare le modalità di utilizzo in sicurezza</span>
+                      <CheckCircle className="w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Disposizioni di legge in materia di uso delle attrezzature di lavoro (D.lgs. n.81/2008)</span>
                     </div>
                   </div>
                 </div>
 
                 {/* Modulo 2 - Pratico */}
-                <div className="bg-emerald-50 border-l-4 border-emerald-600 p-6 rounded-lg">
-                  <h3 className="text-2xl font-bold text-emerald-900 mb-4">MODULO PRATICO CARRELLI INDUSTRIALI SEMOVENTI (8 ORE)</h3>
+                <div className="bg-amber-50 border-l-4 border-amber-600 p-6 rounded-lg">
+                  <h3 className="text-2xl font-bold text-amber-900 mb-4">MODULO PRATICO (3 ORE)</h3>
                   <div className="space-y-3">
                     <div className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-700">Far acquisire le competenze necessarie per l'utilizzo in sicurezza delle attrezzature di lavoro</span>
+                      <CheckCircle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Illustrazione dei vari componenti del carrello elevatore e dei dispositivi di sicurezza</span>
                     </div>
                     <div className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-700">Apprendimento delle relative procedure operative</span>
+                      <CheckCircle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Manutenzione e verifiche giornaliere e periodiche secondo normativa vigente</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Prova pratica di guida su percorso specifico con manovre a vuoto e a carico</span>
                     </div>
                   </div>
                 </div>
@@ -173,7 +173,7 @@ export default function CarrelliElevatori() {
               <div className="mb-12 pb-12 border-b border-gray-200">
                 <h2 className="text-3xl font-bold text-foreground mb-4">Durata</h2>
                 <p className="text-lg text-muted-foreground">
-                  <strong>12 ore totali</strong>: 4 ore formazione teorica + 8 ore formazione pratica
+                  <strong>4 ore totali</strong>: 1 ora formazione giuridico-normativa + 3 ore formazione pratica
                 </p>
               </div>
 
@@ -201,7 +201,7 @@ export default function CarrelliElevatori() {
                     <AlertCircle className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="text-lg text-gray-700 leading-relaxed">
-                        La mancata formazione sull'uso di attrezzature pericolose (art. 71) comporta sanzioni, che possono includere <strong>l'arresto da 3 mesi a 6 mesi o un'ammenda da 2.500 € a 6.400 €</strong>, come previsto dall'art. 87, comma 2, lettera c) del D.lgs. 81/2008.
+                        La mancata formazione sull'uso di attrezzature di lavoro (art. 73) comporta sanzioni, che possono includere <strong>l'arresto da 3 mesi a 6 mesi o un'ammenda da 2.500 € a 6.400 €</strong>, come previsto dall'art. 87, comma 2, lettera c) del D.lgs. 81/2008.
                       </p>
                     </div>
                   </div>
@@ -210,10 +210,10 @@ export default function CarrelliElevatori() {
 
               {/* Aggiornamento */}
               <div className="mb-12">
-                <h2 className="text-3xl font-bold text-foreground mb-6">Aggiornamento</h2>
+                <h2 className="text-3xl font-bold text-foreground mb-6">Periodicità</h2>
                 <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-lg">
                   <p className="text-lg text-gray-700 leading-relaxed">
-                    Il corso di formazione addetti all'uso del carrello elevatore prevede un <strong>aggiornamento periodico quinquennale di 4 ore</strong>.
+                    Il corso di aggiornamento ha una <strong>periodicità quinquennale</strong>, come previsto dalla normativa vigente.
                   </p>
                 </div>
               </div>
@@ -222,18 +222,18 @@ export default function CarrelliElevatori() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-12 md:py-16 bg-gradient-to-r from-blue-600 to-blue-700">
+        <section className="py-12 md:py-16 bg-gradient-to-r from-orange-600 to-amber-600">
           <div className="container">
             <div className="max-w-2xl">
-              <h2 className="text-3xl font-bold text-white mb-4">Pronto a iscriverti?</h2>
-              <p className="text-blue-100 mb-8">
+              <h2 className="text-3xl font-bold text-white mb-4">Pronto a rinnovare la tua certificazione?</h2>
+              <p className="text-orange-100 mb-8">
                 Contattaci per informazioni, disponibilità e iscrizioni. Rispondiamo entro 24 ore.
               </p>
               <a
-                href="https://wa.me/393465835685?text=Sono%20interessato%20al%20Corso%20Carrelli%20Elevatori"
+                href="https://wa.me/393465835685?text=Sono%20interessato%20al%20Corso%20Aggiornamento%20Carrelli%20Elevatori"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-blue-50 transition-colors"
+                className="inline-flex items-center gap-2 bg-white text-orange-600 px-8 py-4 rounded-lg font-bold hover:bg-orange-50 transition-colors"
               >
                 <MessageCircle className="w-5 h-5" />
                 Contattaci su WhatsApp
