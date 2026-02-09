@@ -1,80 +1,102 @@
-import { ChevronRight, Clock, CheckCircle, AlertCircle, RotateCcw } from "lucide-react";
-import { Link } from "wouter";
-import { Button } from "@/components/ui/button";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
+import { CheckCircle, Clock, AlertCircle, MessageCircle, Users } from "lucide-react";
 
 export default function AggiornamentoPrepostiStradaliNew() {
-  const whatsappPhone = "346583585";
-  const whatsappMessage = encodeURIComponent(
-    "Ciao! Sono interessato al corso: Corso di Aggiornamento Preposti Stradali"
-  );
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-      {/* Breadcrumb */}
-      <div className="bg-slate-800/50 border-b border-slate-700">
-        <div className="container mx-auto px-4 py-3">
-          <div className="flex items-center gap-2 text-sm text-slate-400">
-            <Link href="/" className="hover:text-blue-400 transition-colors">
-              Home
-            </Link>
-            <ChevronRight size={16} />
-            <Link href="/servizi" className="hover:text-blue-400 transition-colors">
-              Servizi
-            </Link>
-            <ChevronRight size={16} />
-            <Link href="/servizi/formazione" className="hover:text-blue-400 transition-colors">
-              Formazione
-            </Link>
-            <ChevronRight size={16} />
-            <span className="text-slate-300">Corso di Aggiornamento Preposti Stradali</span>
-          </div>
-        </div>
-      </div>
-
-      {/* Hero Section */}
-      <div className="relative py-16 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10"></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl">
-            <div className="inline-block bg-blue-500/20 text-blue-300 px-4 py-2 rounded-full text-sm mb-4">
-              Macchine e Attrezzature
+    <div className="min-h-screen flex flex-col bg-background">
+      <Header />
+      <main className="flex-1">
+        <section className="bg-gray-50 border-b border-gray-200 py-4">
+          <div className="container">
+            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+              <a href="/" className="hover:text-foreground">Home</a>
+              <span>/</span>
+              <a href="/servizi/formazione" className="hover:text-foreground">Formazione</a>
+              <span>/</span>
+              <span className="text-foreground font-medium">Aggiornamento Preposti Stradali</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Corso di Aggiornamento Preposti Stradali
-            </h1>
-            <p className="text-xl text-slate-300 mb-8">
-              Contenuti in fase di completamento. Contattaci per maggiori informazioni.
-            </p>
-            <a
-              href={"https://wa.me/" + whatsappPhone + "?text=" + whatsappMessage}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-lg transition-colors"
-            >
-              Contattaci su WhatsApp
-            </a>
           </div>
-        </div>
-      </div>
+        </section>
 
-      {/* Content Placeholder */}
-      <div className="container mx-auto px-4 py-16">
-        <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-8 text-center">
-          <AlertCircle className="w-12 h-12 text-yellow-400 mx-auto mb-4" />
-          <h2 className="text-2xl font-bold text-white mb-2">Pagina in Costruzione</h2>
-          <p className="text-slate-400 mb-6">
-            I dettagli del corso verranno aggiunti a breve. Contattaci per ricevere informazioni complete.
-          </p>
-          <a
-            href={"https://wa.me/" + whatsappPhone + "?text=" + whatsappMessage}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-6 rounded-lg transition-colors"
-          >
-            Richiedi Informazioni
-          </a>
-        </div>
-      </div>
+        <section className="py-12 md:py-16 bg-white border-b border-gray-200">
+          <div className="container">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div className="relative">
+                <div className="absolute -top-4 -left-4 bg-orange-600 text-white px-4 py-2 rounded-full font-bold text-sm z-10 transform -rotate-12">
+                  AGGIORNAMENTO
+                </div>
+                <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&h=400&fit=crop" alt="Aggiornamento Preposti" className="w-full h-auto rounded-lg shadow-lg" />
+              </div>
+
+              <div>
+                <h1 className="text-4xl font-bold text-foreground mb-4">Aggiornamento Preposti Stradali</h1>
+                <p className="text-lg text-muted-foreground mb-6">Durata <strong>4 ore</strong></p>
+
+                <div className="space-y-4 mb-8">
+                  <div className="flex items-start gap-3 bg-orange-50 p-4 rounded-lg">
+                    <Clock className="w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <p className="font-semibold text-foreground">Durata</p>
+                      <p className="text-sm text-muted-foreground">4 ore totali</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3 bg-amber-50 p-4 rounded-lg">
+                    <Users className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <p className="font-semibold text-foreground">Target</p>
+                      <p className="text-sm text-muted-foreground">Preposti con certificazione in scadenza</p>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="https://wa.me/393465835685?text=Sono%20interessato%20al%20Corso%20Aggiornamento%20Preposti%20Stradali" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-lg font-bold transition-colors">
+                  <MessageCircle className="w-5 h-5" />
+                  Contattaci su WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-12 md:py-16 bg-white">
+          <div className="container">
+            <div className="max-w-4xl">
+              <div className="mb-12 pb-12 border-b border-gray-200">
+                <h2 className="text-3xl font-bold text-foreground mb-6">Descrizione</h2>
+                <p className="text-lg text-muted-foreground leading-relaxed">Aggiornamento periodico per preposti stradali. Mantiene le competenze di coordinamento e la consapevolezza dei rischi legati alla supervisione dei lavori stradali.</p>
+              </div>
+
+              <div className="mb-12 pb-12 border-b border-gray-200 bg-orange-50 border-l-4 border-orange-600 p-6 rounded-lg">
+                <h2 className="text-3xl font-bold text-orange-900 mb-6">A Chi È Rivolto</h2>
+                <p className="text-lg text-gray-700 leading-relaxed">Preposti stradali con certificazione in scadenza che necessitano di aggiornamento periodico.</p>
+              </div>
+
+              <div className="mb-12 pb-12 border-b border-gray-200">
+                <h2 className="text-3xl font-bold text-foreground mb-6">Sanzioni</h2>
+                <div className="bg-red-50 border-l-4 border-red-600 p-6 rounded-lg">
+                  <p className="text-lg text-gray-700 leading-relaxed">Arresto da 3 a 6 mesi o ammenda da 2.500 a 6.400 euro.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-12 md:py-16 bg-gradient-to-r from-orange-600 to-amber-600">
+          <div className="container">
+            <div className="max-w-2xl">
+              <h2 className="text-3xl font-bold text-white mb-4">Pronto a rinnovare?</h2>
+              <a href="https://wa.me/393465835685?text=Sono%20interessato%20al%20Corso%20Aggiornamento%20Preposti%20Stradali" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white text-orange-600 px-8 py-4 rounded-lg font-bold hover:bg-orange-50 transition-colors">
+                <MessageCircle className="w-5 h-5" />
+                Contattaci su WhatsApp
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <Footer />
+      <WhatsAppButton />
     </div>
   );
 }
