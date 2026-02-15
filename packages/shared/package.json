@@ -1,0 +1,11 @@
+{
+  "name": "@studiopadalino/shared",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "main": "./src/const.ts",
+  "types": "./src/const.ts",
+  "exports": {
+    ".": "./src/const.ts"
+  }
+}

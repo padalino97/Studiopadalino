@@ -1,0 +1,12 @@
+name = "studiopadalino-api"
+main = "src/index.ts"
+compatibility_date = "2026-02-15"
+
+# KV Namespace for caching
+[[kv_namespaces]]
+binding = "CACHE"
+id = "47436f030d7643f58f71d3518f9226f3"
+
+# Environment variables (optional)
+[vars]
+ENVIRONMENT = "production"
